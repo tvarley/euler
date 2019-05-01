@@ -2,8 +2,12 @@
   "name": "euler-javascript",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
-  "devDependencies": {},
+  "scripts": {
+    "test": "mocha --no-color"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
   "dependencies": {},
   "bin": {
     "euler-javascript": "bin/euler-javascript"
