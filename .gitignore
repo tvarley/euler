@@ -29,3 +29,4 @@
 
 cpp/bin/
 .DS_Store
+*.swp

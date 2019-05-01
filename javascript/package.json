@@ -1,0 +1,11 @@
+{
+  "name": "euler-javascript",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "bin": {
+    "euler-javascript": "bin/euler-javascript"
+  }
+}
