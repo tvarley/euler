@@ -8,9 +8,9 @@
 
 module.exports = {
   answer : () => {
-    answer = 2
-    point = 3
-    divisor = 600851475143
+    answer = 2;
+    point = 3;
+    divisor = 600851475143;
 
     while(divisor != 1) {
       while( (divisor % 2) == 0) { divisor /= 2; }
