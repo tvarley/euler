@@ -16,7 +16,6 @@
 # Answer: 21124
 #
 require 'humanize'
-require 'byebug'
 
 def simple_humanize_length(number)
   raise ArgumentError.new('Only supports (1..99999)') unless (1..99999).cover?(number)
@@ -77,3 +76,6 @@ end
 def number_letter_counts_cheat(upper)
   (1..upper).reduce(0) { |sum, digit| sum += digit.humanize.tr(' -', '').length }
 end
+
+puts "Mine: #{number_letter_counts(1000)}" if __FILE__ == $PROGRAM_NAME
+puts "Cheat: #{number_letter_counts_cheat(1000)}" if __FILE__ == $PROGRAM_NAME
