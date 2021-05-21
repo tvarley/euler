@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # https://projecteuler.net/problem=4
 
 # A palindromic number reads the same both ways.
@@ -12,7 +14,7 @@ def palindrome_test(test_me)
   reversed = 0
   original = test_me
 
-  while 0 < original
+  while original.positive?
     reversed = reversed * 10 + (original % 10)
     original /= 10
   end

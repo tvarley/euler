@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # https://projecteuler.net/problem=5
 
 # 2520 is the smallest number that can be divided by each of the numbers from
@@ -19,6 +21,7 @@ def euler005_solution
   answer = 20
   loop do
     break if will_divide(answer)
+
     answer += 20
   end
   answer

@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # https://projecteuler.net/problem=10
 # Summation of primes

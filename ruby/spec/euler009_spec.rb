@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'euler009'
 
 describe 'Euler 009 solution' do

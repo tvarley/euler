@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'euler017'
 
 describe 'Euler 017 solution' do
@@ -7,7 +9,7 @@ describe 'Euler 017 solution' do
     end
 
     it 'should not accept > 999999' do
-      expect { simple_humanize_length(100000) }.to raise_error(ArgumentError)
+      expect { simple_humanize_length(100_000) }.to raise_error(ArgumentError)
     end
   end
 

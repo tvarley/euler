@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # Lattice paths
 
 # https://projecteuler.net/problem=15
