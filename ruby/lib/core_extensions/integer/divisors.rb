@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # /lib/core_extensions/integer/divisors.rb
 require 'prime'
 

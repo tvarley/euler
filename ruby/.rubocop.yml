@@ -1,28 +1,27 @@
 AllCops:
+  SuggestExtensions: false
   Exclude:
     - 'db/**/*'
     - 'bin/**/*'
     - 'config/**/*'
     - 'vendor/**/*'
+    - 'Guardfile'
 
-Rails:
-  Enabled: true
-
-LineLength:
+Layout/LineLength:
   Description: 'Limit lines to 120 characters.'
   Enabled: true
   Max: 120
 
-MethodLength:
+Metrics/MethodLength:
   Enabled: false
 
-ClassLength:
+Metrics/ClassLength:
   Enabled: false
 
-NumericLiterals:
+Style/NumericLiterals:
   MinDigits: 6
 
-CyclomaticComplexity:
+Metrics/CyclomaticComplexity:
   Enabled: false
 
 Metrics/AbcSize:
@@ -31,8 +30,7 @@ Metrics/AbcSize:
 Metrics/PerceivedComplexity:
   Enabled: false
 
-# Causes false positives in Atom
-Style/FileName:
+Naming/FileName:
   Description: 'Use snake_case for source file names.'
   Enabled: false
 
@@ -40,20 +38,14 @@ Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
-Style/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-Style/MultilineMethodCallIndentation:
+Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
-Style/CaseIndentation:
-  IndentWhenRelativeTo: end
-
-Rails/HasAndBelongsToMany:
-  Enabled: false
+Layout/CaseIndentation:
+  EnforcedStyle: end
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact

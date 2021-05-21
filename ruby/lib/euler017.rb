@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # https://projecteuler.net/problem=17
 # Number letter counts
 #
@@ -18,14 +20,14 @@
 require 'humanize'
 
 def simple_humanize_length(number)
-  raise ArgumentError.new('Only supports (1..99999)') unless (1..99999).cover?(number)
+  raise ArgumentError, 'Only supports (1..99999)' unless (1..99999).cover?(number)
 
   result = ''
   working = number
 
-  while working > 0
+  while working.positive?
     case working
-    when (1000..999999)
+    when (1000..999_999)
       how_many = (working / 1000).floor
       working -= 1000 * how_many
       result += "#{simple_humanize_length(how_many)}thousand"
@@ -37,26 +39,26 @@ def simple_humanize_length(number)
       how_many = (working / 10).floor
       working -= 10 * how_many
       result += case how_many
-                when 4,5,6 # forty, fifty, sixty = 5
-                    'xxxxx'
-                when 2,3,8,9 # twenty, thirty, eighty, ninety = 6
-                    'xxxxxx'
+                when 4, 5, 6 # forty, fifty, sixty = 5
+                  'xxxxx'
+                when 2, 3, 8, 9 # twenty, thirty, eighty, ninety = 6
+                  'xxxxxx'
                 when 7 # seventy = 7
-                    'xxxxxxx'
+                  'xxxxxxx'
                 end
     else
       result += case working
-                when 1,2,6,10 # one, two, six, ten = 3
+                when 1, 2, 6, 10 # one, two, six, ten = 3
                   'xxx'
-                when 4,5,9 # four, five, nine = 4
+                when 4, 5, 9 # four, five, nine = 4
                   'xxxx'
-                when 3,7,8 # three, seven, eight = 5
+                when 3, 7, 8 # three, seven, eight = 5
                   'xxxxx'
-                when 11,12 # eleven, twelve = 6
+                when 11, 12 # eleven, twelve = 6
                   'xxxxxx'
-                when 15,16 # fifteen, sixteen = 7
+                when 15, 16 # fifteen, sixteen = 7
                   'xxxxxxx'
-                when 13,14,18,19 # thirteen, fourteen, eighteen, nineteen = 8
+                when 13, 14, 18, 19 # thirteen, fourteen, eighteen, nineteen = 8
                   'xxxxxxxx'
                 when 17
                   'xxxxxxxxx' # seventeen = 9
@@ -69,12 +71,12 @@ end
 
 def number_letter_counts(upper)
   (1..upper).reduce(0) do |sum, digit|
-    sum += simple_humanize_length(digit).length
+    sum + simple_humanize_length(digit).length
   end
 end
 
 def number_letter_counts_cheat(upper)
-  (1..upper).reduce(0) { |sum, digit| sum += digit.humanize.tr(' -', '').length }
+  (1..upper).reduce(0) { |sum, digit| sum + digit.humanize.tr(' -', '').length }
 end
 
 puts "Mine: #{number_letter_counts(1000)}" if __FILE__ == $PROGRAM_NAME

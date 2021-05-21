@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # Longest Collatz sequence
 
 # The following iterative sequence is defined for the set of positive integers:
@@ -20,6 +22,8 @@
 
 # Answer: 837799
 
+# Ikky GlobalVar, but ok for this
+# rubocop:disable Style/GlobalVars
 $cache = []
 
 def collatz_sequence_length(start, options = {})
@@ -28,7 +32,7 @@ def collatz_sequence_length(start, options = {})
   chain_length = 1
   current_value = start
 
-  while 1 != current_value
+  while current_value != 1
     unless $cache[current_value].nil?
       chain_length += $cache[current_value]
       break
@@ -61,6 +65,7 @@ def longest_collatz_sequence_process(options = {})
   end
   longest_starting_number
 end
+# rubocop:enable Style/GlobalVars
 
 def longest_collatz_sequence
   longest_collatz_sequence_process
