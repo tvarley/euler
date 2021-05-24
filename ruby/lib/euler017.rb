@@ -20,7 +20,7 @@
 require 'humanize'
 
 def simple_humanize_length(number)
-  raise ArgumentError, 'Only supports (1..99999)' unless (1..99999).cover?(number)
+  raise ArgumentError, 'Only supports (1..99999)' unless (1..99_999).cover?(number)
 
   result = ''
   working = number
