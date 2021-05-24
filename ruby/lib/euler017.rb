@@ -40,28 +40,28 @@ def simple_humanize_length(number)
       working -= 10 * how_many
       result += case how_many
                 when 4, 5, 6 # forty, fifty, sixty = 5
-                  'xxxxx'
+                  'aaaaa'
                 when 2, 3, 8, 9 # twenty, thirty, eighty, ninety = 6
-                  'xxxxxx'
+                  'bbbbbb'
                 when 7 # seventy = 7
-                  'xxxxxxx'
+                  'ccccccc'
                 end
     else
       result += case working
                 when 1, 2, 6, 10 # one, two, six, ten = 3
-                  'xxx'
+                  'ddd'
                 when 4, 5, 9 # four, five, nine = 4
-                  'xxxx'
+                  'eeee'
                 when 3, 7, 8 # three, seven, eight = 5
-                  'xxxxx'
+                  'fffff'
                 when 11, 12 # eleven, twelve = 6
-                  'xxxxxx'
+                  'gggggg'
                 when 15, 16 # fifteen, sixteen = 7
-                  'xxxxxxx'
+                  'hhhhhhh'
                 when 13, 14, 18, 19 # thirteen, fourteen, eighteen, nineteen = 8
-                  'xxxxxxxx'
+                  'iiiiiiii'
                 when 17
-                  'xxxxxxxxx' # seventeen = 9
+                  'jjjjjjjjj' # seventeen = 9
                 end
       working = 0
     end
