@@ -27,7 +27,7 @@ def simple_humanize_length(number)
 
   while working.positive?
     case working
-    when (1000..999_999)
+    when (1000..99_999)
       how_many = (working / 1000).floor
       working -= 1000 * how_many
       result += "#{simple_humanize_length(how_many)}thousand"
