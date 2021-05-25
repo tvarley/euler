@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 // #include <vector>
 
 // int main( int argc, char* argv[] )
@@ -20,10 +20,13 @@
 //   void bar() { foo(); }
 // };
 //
-// int main() {
-//   B b;
-//   b.bar();
-// }
+int main() {
+  int year = 1900;
+  int month = 4;
+  std::cout << "Before: " << year;
+  year -= month < 3;
+  std::cout << "Before: " << year;
+}
 
 
 // #include <iostream>
@@ -103,24 +106,23 @@
 //   //X x();
 // }
 
-
-#include <functional>
-#include <iostream>
-
-template <typename T>
-struct identity
-{
-  typedef T type;
-};
-
-template <typename T>
-void call_with(typename identity<std::function<void(T)> >::type f, T val)
-{
-  f(val);
-}
-
-int main()
-{
-  auto print = [] (int x) { std::cout << x; };
-  call_with(print, 42);
-}
+// #include <functional>
+// #include <iostream>
+// 
+// template <typename T>
+// struct identity
+// {
+//   typedef T type;
+// };
+// 
+// template <typename T>
+// void call_with(typename identity<std::function<void(T)> >::type f, T val)
+// {
+//   f(val);
+// }
+// 
+// int main()
+// {
+//   auto print = [] (int x) { std::cout << x; };
+//   call_with(print, 42);
+// }
