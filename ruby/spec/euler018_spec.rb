@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'euler018'
-require 'byebug'
 
 describe 'Euler 018 solution' do
   describe 'maximum_path_sum_one' do
