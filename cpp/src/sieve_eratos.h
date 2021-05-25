@@ -38,9 +38,9 @@ public:
     }
   }
 
-  uint64_t sum(int a_max)
+  u_int64_t sum(int a_max)
   {
-    uint64_t total = 0;
+    u_int64_t total = 0;
     size_t i;
     for( i = 0; i < a_max ; i++){
       if( true == (*m_primes)[i]){
