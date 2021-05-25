@@ -38,4 +38,6 @@ def counting_sundays(start_date, end_date)
   suns
 end
 
-puts counting_sundays(DateTime.parse('1/1/1901'), DateTime.parse('31/12/2000')) if __FILE__ == $PROGRAM_NAME
+start_date = DateTime.parse('1/1/1901')
+end_date = DateTime.parse('31/12/2000')
+puts counting_sundays(start_date, end_date) if __FILE__ == $PROGRAM_NAME
