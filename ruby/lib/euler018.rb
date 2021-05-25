@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'awesome_print'
-
 # https://projecteuler.net/problem=18
 # Maximum path sum I
 
