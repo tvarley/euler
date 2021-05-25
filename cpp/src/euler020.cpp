@@ -11,6 +11,7 @@
 // Answer: 648
 
 #include <iostream>
+#include <chrono>
 
 static const int big_size = 500;
 
