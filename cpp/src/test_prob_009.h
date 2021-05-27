@@ -23,9 +23,8 @@ namespace{
     }
     auto p2 = my_clock::now();
 
-    //auto a1 = std::chrono::duration_cast<timer_res>(p2-p1);
-    auto a1 = p2-p1;
-    std::cout << "Brute force took: " << a1.count() << std::endl;
+    auto a1 = std::chrono::duration_cast<timer_res>(p2-p1);
+    std::cout << "Brute force took: " << a1.count() << " μs" << std::endl;
 
     p1 = my_clock::now();
     for( int i = 0 ; i < ITER; i++ ){
@@ -33,9 +32,11 @@ namespace{
     }
     p2 = my_clock::now();
 
-    //auto a2 = std::chrono::duration_cast<timer_res>(p2-p1);
-    auto a2 = p2-p1;
-    std::cout << "Opt 001 took: " << a2.count() << std::endl;
+    auto a2 = std::chrono::duration_cast<timer_res>(p2-p1);
+    std::cout << "Opt 001 took: " << a2.count() << " μs" << std::endl;
+
+    auto delta = static_cast<float>(a1.count()) / static_cast<float>(a2.count()) * 100;
+    std::cout << "Delta: " << delta << "%" << std::endl;
 
     if( a2 < a1 )SUCCEED();
     //FAIL();
