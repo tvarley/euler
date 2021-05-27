@@ -19,7 +19,7 @@ namespace{
   TEST(Prob008,Perf001){
 
     typedef std::chrono::high_resolution_clock my_clock;
-    typedef std::chrono::milliseconds timer_res;
+    typedef std::chrono::microseconds timer_res;
 
     uint64_t a,b;
     auto p1 = my_clock::now();
@@ -28,9 +28,8 @@ namespace{
     }
     auto p2 = my_clock::now();
 
-    //auto a1 = std::chrono::duration_cast<timer_res>(p2-p1);
-    auto a1 = p2-p1;
-    std::cout << "Brute force took: " << a1.count() << std::endl;
+    auto a1 = std::chrono::duration_cast<timer_res>(p2-p1);
+    std::cout << "Brute force took: " << a1.count() << " μs" << std::endl;
 
     p1 = my_clock::now();
     for( int i = 0 ; i < 100000; i++ ){
@@ -38,9 +37,10 @@ namespace{
     }
     p2 = my_clock::now();
 
-    //auto a2 = std::chrono::duration_cast<timer_res>(p2-p1);
-    auto a2 = p2-p1;
-    std::cout << "Opt 001 took: " << a2.count() << std::endl;
+    auto a2 = std::chrono::duration_cast<timer_res>(p2-p1);
+    std::cout << "Opt 001 took: " << a2.count() << " μs" << std::endl;
+
+    std::cout << "Delta: " << static_cast<float>(a1.count()) / static_cast<float>(a2.count()) << std::endl;
 
     if( a2 < a1 )SUCCEED();
     // FAIL();
