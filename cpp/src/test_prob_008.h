@@ -40,7 +40,8 @@ namespace{
     auto a2 = std::chrono::duration_cast<timer_res>(p2-p1);
     std::cout << "Opt 001 took: " << a2.count() << " μs" << std::endl;
 
-    std::cout << "Delta: " << static_cast<float>(a1.count()) / static_cast<float>(a2.count()) << std::endl;
+    auto delta = static_cast<float>(a1.count()) / static_cast<float>(a2.count()) * 100;
+    std::cout << "Delta: " << delta << "%" << std::endl;
 
     if( a2 < a1 )SUCCEED();
     // FAIL();
