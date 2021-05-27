@@ -21,9 +21,11 @@
 
 // Answer: 4179871
 
+#include <algorithm>
+#include <array>
+#include <cmath>
 #include <iostream>
 #include <vector>
-#include <cmath>
 
 enum HOW_PERFECT
 {
@@ -34,39 +36,59 @@ enum HOW_PERFECT
 
 HOW_PERFECT how_perfect(int number)
 {
-  int limit = sqrt((double)number);
-  int sum = 1;
-
-  for (int i=2; i<=limit; i++)
-  {
-    if (number % i == 0){
-      sum += (i + number/i);
+  int sum{1};
+  int i = 2;
+  for (int j = number; i < j; ++i) {
+    if ( number % i == 0 ) {
+      sum += i;
+      j = number / i;
+      if (i == j)
+         break;
+      sum += j;
     }
   }
 
-  std::cout << "how_perfect: " << number << " sum: " << number << std::endl;
-
   if(sum == number){
     return PERFECT;
-  }if(sum > number){
+  }else if(sum > number){
     return DEFICIENT;
   }else{
     return ABUNDENT;
   }
 }
 
-int non_abundunt_sums(int max)
+long non_abundunt_sums()
 {
+  constexpr uint32_t max{28123};
   std::vector<int> abundents;
-  for( int i = 1 ; i <= max ; i++ ){
-
+  for( uint32_t i{1} ; i <= max ; ++i ){
+    if(how_perfect(i) == ABUNDENT) {
+      abundents.push_back(i);
+    }
   }
-  return 0;
+  std::array<bool, max> are_sums{};
+  for(uint32_t i{}; i < abundents.size(); ++i) {
+    for( uint32_t j{i} ; ; ++j ) {
+      uint32_t k = abundents[i] + abundents[j];
+      if( k >= max ) 
+        break;
+      are_sums[k] = true;
+    }
+  }
+  long sum{};
+  for (uint32_t i{}; i < max; ++i) {
+    if (!are_sums[i]) {
+      std::cout << i << ") - " << are_sums[i] << std::endl;
+      sum += i;
+    }
+  }
+  
+  return sum;
 }
 
 #if ! defined UNITTEST_MODE
 int main(int argc, char const *argv[])
 {
-  std::cout << "Answer: " << non_abundunt_sums(12) << std::endl;
+  std::cout << "Answer: " << non_abundunt_sums() << std::endl;
 }
 #endif //#if ! defined UNITTEST_MODE
