@@ -27,6 +27,7 @@
 #include "test_prob_021.h"
 #include "test_prob_022.h"
 #include "test_prob_023.h"
+#include "test_prob_024.h"
 
 int main(int argc, char* argv[] )
 {

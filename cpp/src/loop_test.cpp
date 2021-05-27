@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ctime>
+#include <chrono>
 #include <algorithm>
 
 typedef std::chrono::high_resolution_clock my_clock;
@@ -7,7 +7,7 @@ typedef std::chrono::milliseconds timer_res;
 
 int main( int argc , char* argv[] )
 {
-  double duration;
+  // double duration;
   int m = 100;
   int a[100];
   static const int ITER = 1000000;

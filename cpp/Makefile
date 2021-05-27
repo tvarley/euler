@@ -4,7 +4,7 @@ BIN=./bin
 SRC=./src
 LLIB=$(SRC)/sieve_eratos.o
 LIB=-lpthread /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a
-CXXFLAGS=-O0 -std=c++11 -ftemplate-depth=1024
+CXXFLAGS=-O0 -std=gnu++17 -ftemplate-depth=1024
 
 BINARIES=$(BIN)/euler001 \
 			$(BIN)/euler002 \
@@ -29,6 +29,7 @@ BINARIES=$(BIN)/euler001 \
 			$(BIN)/euler021 \
 			$(BIN)/euler022 \
 			$(BIN)/euler023 \
+			$(BIN)/euler024 \
 			$(BIN)/bowling \
 			$(BIN)/unittest
 
