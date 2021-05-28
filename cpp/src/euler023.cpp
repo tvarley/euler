@@ -50,7 +50,7 @@ HOW_PERFECT how_perfect(int number)
 
   if(sum == number){
     return PERFECT;
-  }else if(sum > number){
+  }else if(sum < number){
     return DEFICIENT;
   }else{
     return ABUNDENT;
@@ -59,26 +59,26 @@ HOW_PERFECT how_perfect(int number)
 
 long non_abundunt_sums()
 {
-  constexpr uint32_t max{28123};
+  constexpr int max{28123};
   std::vector<int> abundents;
-  for( uint32_t i{1} ; i <= max ; ++i ){
+  for( int i{1} ; i <= max ; ++i ){
     if(how_perfect(i) == ABUNDENT) {
       abundents.push_back(i);
     }
   }
   std::array<bool, max> are_sums{};
-  for(uint32_t i{}; i < abundents.size(); ++i) {
-    for( uint32_t j{i} ; ; ++j ) {
-      uint32_t k = abundents[i] + abundents[j];
-      if( k >= max ) 
+  for( unsigned i{}; i < abundents.size(); ++i ) {
+    for( unsigned j{i} ; ; ++j ) {
+      long k = abundents[i] + abundents[j];
+      if( k >= max ) {
         break;
+      }
       are_sums[k] = true;
     }
   }
   long sum{};
-  for (uint32_t i{}; i < max; ++i) {
+  for (int i{}; i < max; ++i) {
     if (!are_sums[i]) {
-      std::cout << i << ") - " << are_sums[i] << std::endl;
       sum += i;
     }
   }
