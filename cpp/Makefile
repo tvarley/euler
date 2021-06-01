@@ -52,12 +52,10 @@ $(BIN)/euler010: $(SRC)/euler010.o $(SRC)/sieve_eratos.o
 
 TESTINC := $(wildcard $(SRC)/test_*.h)
 SOLUSRC := $(wildcard $(SRC)/euler*.cpp)
-$(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SOLUSRC) $(SRC)/sieve_eratos.h
+$(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SOLUSRC) $(SRC)/sieve_eratos.h $(SRC)/simple_timer.h
 
-$(BIN)/unittest: $(SRC)/unittest.o $(SRC)/sieve_eratos.o
+$(BIN)/unittest: $(SRC)/unittest.o $(SRC)/sieve_eratos.o 
 		$(CXX) $(CXXFLAGS) $< -o $@ $(LLIB) $(LIB)
 
-#include "sieve_eratos.h"
-
-$(BIN)/%:  $(SRC)/%.o
+$(BIN)/%:  $(SRC)/%.o $(SRC)/simple_timer.h
 	$(CXX) $(CXXFLAGS) $< -o $@
