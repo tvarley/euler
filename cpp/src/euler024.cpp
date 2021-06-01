@@ -17,14 +17,14 @@
 #include <iostream>
 #include <string>
 
+#include "simple_timer.h"
+
 std::string lexicographic_permutations_cheat(std::string input)
 {
-  // std::sort(input.begin(), input.end());
   int perm_count = 0;
   std::string result; 
   do {
     result = input;
-    // std::cout << result << std::endl;
   } while(std::next_permutation(input.begin(), input.end()) && ++perm_count < 1000000);
 
   return result;
@@ -51,6 +51,10 @@ int main(int argc, char const *argv[])
   std::string solution = "2783915460";
   std::string digits("0123456789");
   std::cout << "Solution: " << solution << std::endl;
+
+  {
+    simple_timer x("Lexicographics permutations (cheat mode)");
+  }
 
   std::chrono::high_resolution_clock hr_clock;
   // ------8<----Cheat mode-------8<-------
