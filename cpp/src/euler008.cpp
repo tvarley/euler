@@ -32,6 +32,8 @@
 #include <iostream>
 #include <cstdint>
 
+#include "simple_timer.h"
+
 static const int digits[] =
 {
 7,3,1,6,7,1,7,6,5,3,1,3,3,0,6,2,4,9,1,9,2,2,5,1,1,
@@ -158,8 +160,14 @@ uint64_t largest_product_brute(int len)
 #if ! defined UNITTEST_MODE
 int main(int argc, char const *argv[])
 {
-  std::cout << "Answer: " << largest_product_brute(13) << std::endl;
-  std::cout << "Answer: " << largest_product_opt<13>() << std::endl;
+  {
+    simple_timer x("largest_product_brute", true);
+    std::cout << "Answer: " << largest_product_brute(13) << std::endl;
+  }
+  {
+    simple_timer x("largest_product_opt", true);
+    std::cout << "Answer: " << largest_product_opt<13>() << std::endl;
+  }
   return 0;
 }
 #endif
