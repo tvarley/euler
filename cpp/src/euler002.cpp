@@ -14,7 +14,7 @@
 
 using namespace std;
 
-int sum_even_fib(size_t upper)
+int sum_even_fib(long upper)
 {
   long fib1 = 1;
   long fib2 = 1;
