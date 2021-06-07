@@ -31,6 +31,23 @@ std::string lexicographic_permutations_cheat(std::string input)
   return result;
 }
 
+// This function finds the index of the smallest character
+// which is greater than 'first' and is present in str[l..h]
+int findCeil (char str[], char first, int l, int h)
+{
+    // initialize index of ceiling element
+    int ceilIndex = l;
+
+    // Now iterate through rest of the elements and find
+    // the smallest character greater than 'first'
+    for (int i = l+1; i <= h; i++)
+      if (str[i] > first && str[i] < str[ceilIndex])
+        ceilIndex = i;
+
+    return ceilIndex;
+}
+
+
 // @see - https://www.geeksforgeeks.org/lexicographic-permutations-of-string/
 // Following are the steps to print the permutations lexicographic-ally
 // 1. Sort the given string in non-decreasing order and print it. 
@@ -56,8 +73,31 @@ std::string lexicographic_permutations(const std::string& input)
   std::cout << "Result: " << result << std::endl;
   int perm_count = 0;
   while( ++perm_count < 1000000 ) {
+    std::cout << perm_count << ") Result: " << result << std::endl;
+    std::string::iterator itr;
+    for( itr = (result.end() - 2); itr != result.begin(); --itr ) {
+      std::cout << "Itr: [" << *itr << "][" << *(itr+1) << "]" << std::endl;
+      if(*itr < *(itr+1)) {
+        break;
+      }
+    }
+    if( itr == result.begin() ) {
+      break;
+    } else {
+      std::string::iterator swapsy = itr + 1;
+      for( auto itr2 = itr + 1; itr2 != result.end(); itr2++ ) {
+        if( *itr2 > *itr && *itr2 < *swapsy ) {
+          swapsy = itr2;
+        }
+      }
+      
+      std::cout << "Swap: " << *itr << " with " << *swapsy << std::endl;
+      std::iter_swap(swapsy, itr);
+      std::sort(itr+1, result.end());
+      std::cout << perm_count << ") Post Result: " << result << std::endl;
+    }
   }
-  return input;
+  return result;
 }
 
 #if ! defined UNITTEST_MODE
@@ -79,15 +119,15 @@ int main(int argc, char const *argv[])
   // ------8<---- Cheat Mode---8<-------
 
   // ------8<----Non Cheat Mode---8<-------
-  {
-    simple_timer x("Lexicographics permutations ( non cheat mode)");
-    std::string answer = lexicographic_permutations(digits);
-    std::cout << "Cheat mode" << std::endl;
-    std::cout << "Answer: " << answer << std::endl;
-    std::cout << "Correct?: " << (answer == solution ? "PASS" : "FAIL") << std::endl;
-  }
+  // {
+  //   std::string test_digits("012");
+  //   simple_timer x("Lexicographics permutations ( non cheat mode)");
+  //   std::string answer = lexicographic_permutations(digits);
+  //   std::cout << "Cheat mode" << std::endl;
+  //   std::cout << "Answer: " << answer << std::endl;
+  //   std::cout << "Correct?: " << (answer == solution ? "PASS" : "FAIL") << std::endl;
+  // }
   // ------8<----Non Cheat Mode---8<-------
-
 
   // std::cout << "Answer: " << lexicographic_permutations(digits) << std::endl;
 }
