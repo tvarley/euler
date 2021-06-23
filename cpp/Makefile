@@ -4,7 +4,7 @@ BIN=./bin
 SRC=./src
 LLIB=$(SRC)/sieve_eratos.o
 LIB=-lpthread /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a
-CXXFLAGS=-O0 -g -std=gnu++17 -ftemplate-depth=1024
+CXXFLAGS=-Ofast -std=gnu++17 -ftemplate-depth=1024
 
 BINARIES=$(BIN)/euler001 \
 			$(BIN)/euler002 \
@@ -31,6 +31,7 @@ BINARIES=$(BIN)/euler001 \
 			$(BIN)/euler023 \
 			$(BIN)/euler025 \
 			$(BIN)/bowling \
+			$(BIN)/multiple_24 \
 			$(BIN)/unittest
 
 all: $(BINARIES)
@@ -48,6 +49,9 @@ $(BIN)/euler007: $(SRC)/euler007.o $(SRC)/sieve_eratos.o
 	$(CXX) $(CXXFLAGS) $< -o $@ $(LLIB)
 
 $(BIN)/euler010: $(SRC)/euler010.o $(SRC)/sieve_eratos.o
+	$(CXX) $(CXXFLAGS) $< -o $@ $(LLIB)
+
+$(BIN)/multiple_24: $(SRC)/multiple_24.o $(SRC)/sieve_eratos.o
 	$(CXX) $(CXXFLAGS) $< -o $@ $(LLIB)
 
 TESTINC := $(wildcard $(SRC)/test_*.h)
