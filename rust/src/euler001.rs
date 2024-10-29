@@ -10,9 +10,7 @@ pub fn sum_natural_35(upper:u32) -> u32
 {
     let mut sum = 0;
     for i in 1..upper {
-        if 0 == i % 3 {
-            sum += i;
-        } else if 0 == i % 5 {
+        if 0 == i % 3 || 0 == i % 5 {
             sum += i;
         }
     }
