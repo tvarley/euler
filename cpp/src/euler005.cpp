@@ -14,7 +14,7 @@ int prob005_brute_force(int max)
   uint32_t answer = 0;
   uint32_t test = max;
   bool check = false;
-  while( !check ){
+  while (!check) {
     check = true;
     for( uint32_t i = max ; i && check ; --i){
       check &= (0 == (test%i));
