@@ -26,5 +26,5 @@
 // #include "test_prob_021.h"
 // #include "test_prob_022.h"
 // #include "test_prob_023.h"
-// #include "test_prob_024.h"
 // #include "test_prob_025.h"
+#include "test_prob_026.h"
