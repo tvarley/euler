@@ -22,6 +22,14 @@ This repository provides comprehensive solutions to the first 30 Project Euler p
 
 **Note:** Everything in this repository before this commit was hand-written. This repository is now 100% generated and maintained using AI assistance.
 
+### Project Goals
+
+This personal research project focuses on several key objectives:
+
+- **Increased Project Euler Coverage**: Expand beyond the current 30 problems to provide solutions for more Project Euler challenges
+- **More Languages**: Add implementations in additional programming languages to showcase diverse approaches and paradigms
+- **AI vs. Human Challenges**: Explore the intersection of artificial intelligence and human problem-solving, comparing algorithmic approaches and efficiency across different implementation strategies
+
 ## Features
 
 - **Multi-language implementations**: Compare approaches across seven programming languages
