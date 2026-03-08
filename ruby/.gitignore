@@ -1,1 +1,50 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# compiled output
+/a.out
+a.out
+
+# Core dumps
+core
+core.*
+
+# Bundler
+.bundle
+vendor/bundle
+
+# RubyGems
+.gem
+
+# YARD artifacts
+.yardoc
+.yardopts
+doc/
+
+# rdoc generated
+rdoc/
+
+# rvm
+.ruby-gemset
+.ruby-version
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
+
+# byebug
 .byebug_history
