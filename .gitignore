@@ -35,3 +35,10 @@ tags
 .crush.json
 logs/
 .internal/
+
+# C++ dependencies
+cpp/src/catch_amalgamated.cpp
+cpp/src/catch_amalgamated.hpp
+
+# JavaScript
+javascript/package-lock.json

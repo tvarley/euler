@@ -1,7 +1,4 @@
 #include "euler002.cpp"
-
-namespace{
-  TEST(Prob002,Answer){
-    EXPECT_EQ(4613732,sum_even_fib(4000000));
+TEST_CASE("Prob002 ", "[Prob002]"){
+    REQUIRE(sum_even_fib(4000000 == 4613732));
   }
-};

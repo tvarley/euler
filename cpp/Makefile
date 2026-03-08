@@ -3,7 +3,7 @@
 BIN=./bin
 SRC=./src
 LLIB=$(SRC)/sieve_eratos.o
-LIB=-lpthread /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a
+LIB=-lpthread
 CXXFLAGS=-Ofast -std=gnu++17 -ftemplate-depth=1024
 
 BINARIES=$(BIN)/euler001 \
@@ -58,8 +58,8 @@ TESTINC := $(wildcard $(SRC)/test_*.h)
 SOLUSRC := $(wildcard $(SRC)/euler*.cpp)
 $(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SOLUSRC) $(SRC)/sieve_eratos.h $(SRC)/simple_timer.h
 
-$(BIN)/unittest: $(SRC)/unittest.o $(SRC)/sieve_eratos.o 
-		$(CXX) $(CXXFLAGS) $< -o $@ $(LLIB) $(LIB)
+$(BIN)/unittest: $(SRC)/unittest.o $(SRC)/sieve_eratos.o $(SRC)/catch_amalgamated.o
+		$(CXX) $(CXXFLAGS) $^ -o $@ $(LIB)
 
 $(BIN)/%:  $(SRC)/%.o $(SRC)/simple_timer.h
 	$(CXX) $(CXXFLAGS) $< -o $@

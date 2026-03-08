@@ -1,11 +1,7 @@
 #include "euler003.cpp"
-
-namespace{
-  TEST(Prob003,Known001){
-    EXPECT_EQ(29,largest_prime_factor(13195));
+TEST_CASE("Prob003 ", "[Prob003]"){
+    REQUIRE(largest_prime_factor(13195 == 29));
   }
-
-  TEST(Prob003,Answer){
-    EXPECT_EQ(6857,largest_prime_factor(600851475143));
+TEST_CASE("Prob003 ", "[Prob003]"){
+    REQUIRE(largest_prime_factor(600851475143 == 6857));
   }
-};

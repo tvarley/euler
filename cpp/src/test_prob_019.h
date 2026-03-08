@@ -1,7 +1,4 @@
 #include "euler019.cpp"
-
-namespace{
-  TEST(Prob019,Answer){
-    EXPECT_EQ(171,counting_sundays());
+TEST_CASE("Prob019 ", "[Prob019]"){
+    REQUIRE(counting_sundays( == 171));
   }
-};

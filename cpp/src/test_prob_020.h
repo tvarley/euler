@@ -1,23 +1,17 @@
 #include "euler020.cpp"
-
-namespace{
-  TEST(Prob020,Known001){
-    EXPECT_EQ(27,factorial_digit_sum(10));
+TEST_CASE("Prob020 ", "[Prob020]"){
+    REQUIRE(factorial_digit_sum(10 == 27));
   }
-
-  TEST(Prob020,Answer01){
-    EXPECT_EQ(648,factorial_digit_sum(100));
+TEST_CASE("Prob020 ", "[Prob020]"){
+    REQUIRE(factorial_digit_sum(100 == 648));
   }
-
-  TEST(Prob020,Known002){
-    EXPECT_EQ(27,factorial_digit_sum_opt(10));
+TEST_CASE("Prob020 ", "[Prob020]"){
+    REQUIRE(factorial_digit_sum_opt(10 == 27));
   }
-
-  TEST(Prob020,Answer02){
-    EXPECT_EQ(648,factorial_digit_sum_opt(100));
+TEST_CASE("Prob020 ", "[Prob020]"){
+    REQUIRE(factorial_digit_sum_opt(100 == 648));
   }
-
-  TEST(Prob020,Perf001){
+TEST_CASE("Prob020 ", "[Prob020]"){
 
     typedef std::chrono::high_resolution_clock my_clock;
     typedef std::chrono::microseconds timer_res;
@@ -47,4 +41,3 @@ namespace{
     if( a2 < a1 )SUCCEED();
     // FAIL();
   }
-};

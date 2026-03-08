@@ -1,7 +1,4 @@
 #include "euler011.cpp"
-
-namespace{
-  TEST(Prob011,Answer){
-    EXPECT_EQ(70600674,largest_grid_product_brute());
+TEST_CASE("Prob011 ", "[Prob011]"){
+    REQUIRE(largest_grid_product_brute( == 70600674));
   }
-};

@@ -1,14 +1,11 @@
 #include "euler017.cpp"
-
-namespace{
-  TEST(Prob017,Know001){
+TEST_CASE("Prob017 ", "[Prob017]"){
     g_letter_count = 0;
     mp_for<1,6>()();
-    EXPECT_EQ(19,g_letter_count);
+    REQUIRE(g_letter_count == 19);
   }
-  TEST(Prob017,Answer){
+TEST_CASE("Prob017 ", "[Prob017]"){
     g_letter_count = 0;
     mp_for<1,1001>()();
-    EXPECT_EQ(21124,g_letter_count);
+    REQUIRE(g_letter_count == 21124);
   }
-};

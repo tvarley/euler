@@ -2,22 +2,19 @@
 
 #include "euler008.cpp"  // TODO: Split and inline
 #include "simple_timer.h"
-
-namespace{
-  TEST(Prob008,Known001) {
-    EXPECT_EQ(5832,largest_product_brute(4));
+TEST_CASE("Prob008 ", "[Prob008]"){
+    REQUIRE(largest_product_brute(4 == 5832));
   }
-  TEST(Prob008,Known002) {
-    EXPECT_EQ(5832,largest_product_opt<4>());
+TEST_CASE("Prob008 ", "[Prob008]"){
+    REQUIRE(largest_product_opt<4>( == 5832));
   }
-  TEST(Prob008,Answer001) {
-    EXPECT_EQ(23514624000,largest_product_brute(13));
+TEST_CASE("Prob008 ", "[Prob008]"){
+    REQUIRE(largest_product_brute(13 == 23514624000));
   }
-  TEST(Prob008,Answer002) {
-    EXPECT_EQ(23514624000,largest_product_opt<13>());
+TEST_CASE("Prob008 ", "[Prob008]"){
+    REQUIRE(largest_product_opt<13>( == 23514624000));
   }
-
-  TEST(Prob008,Perf001) {
+TEST_CASE("Prob008 ", "[Prob008]"){
     double a1{};
     double a2{};
     {
@@ -41,4 +38,3 @@ namespace{
     if( a2 < a1 )SUCCEED();
     // FAIL();
   }
-};

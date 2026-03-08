@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <vector>
+#include <cstdint>
 
 uint64_t lattice_path(size_t grid_size)
 {

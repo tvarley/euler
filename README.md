@@ -23,12 +23,53 @@ This repository includes solutions in the following languages:
 
 Each language directory contains solutions to Project Euler problems. To run a specific solution:
 
-- **Go** (go/): `go run eulerXXX.go`
+- **Go** (go/): `go run eulerXXX_main.go`
 - **Rust** (rust/): `cargo run`
 - **C++** (cpp/): `make && ./euler`
 - **Java** (java/): `./gradlew run`
 - **JavaScript** (javascript/): `npm test` or `node src/eulerXXX.js`
 - **Ruby** (ruby/): `ruby lib/eulerXXX.rb` or `bundle exec rspec`
+
+## Running Tests
+
+### C++
+Tests use Catch2 framework.
+
+```bash
+cd cpp
+make bin/unittest
+./bin/unittest
+```
+
+### Rust
+```bash
+cd rust
+cargo test
+```
+
+### Ruby
+```bash
+cd ruby
+bundle exec rspec
+```
+
+### JavaScript
+```bash
+cd javascript
+npm test
+```
+
+### Java
+```bash
+cd java
+./gradlew test
+```
+
+### Go
+```bash
+cd go
+go test ./euler
+```
 
 ## Links
 

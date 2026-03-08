@@ -8,6 +8,7 @@
 // Answer: 232792560
 
 #include <iostream>
+#include <cstdint>
 
 int prob005_brute_force(int max)
 {

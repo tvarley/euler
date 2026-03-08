@@ -1,15 +1,11 @@
 #include "euler009.cpp"
-
-namespace{
-  TEST(Prob009,Known001){
-    EXPECT_EQ(31875000,special_pyg_brute());
+TEST_CASE("Prob009 ", "[Prob009]"){
+    REQUIRE(special_pyg_brute( == 31875000));
   }
-
-  TEST(Prob009,Known002){
-    EXPECT_EQ(31875000,special_pyg_opt());
+TEST_CASE("Prob009 ", "[Prob009]"){
+    REQUIRE(special_pyg_opt( == 31875000));
   }
-
-  TEST(Prob009,Perf001){
+TEST_CASE("Prob009 ", "[Prob009]"){
 
     static const int ITER = 1000;
 
@@ -42,4 +38,3 @@ namespace{
     //FAIL();
   }
 
-};

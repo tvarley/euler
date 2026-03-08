@@ -10,26 +10,16 @@
 
 // Answer: 4613732
 
-package main
+package euler
 
-import (
-	"fmt"
-)
-
-func main() {
-	fib1 := 1
-	fib2 := 2
-	result := 0
-	summed := 0
-
-	for result < 4000000 {
-		if (result % 2) == 0 {
-			summed += result
+func SumEvenFib(limit int) int {
+	a, b := 1, 2
+	sum := 0
+	for a <= limit {
+		if a%2 == 0 {
+			sum += a
 		}
-
-		result = fib1 + fib2
-		fib2 = fib1
-		fib1 = result
+		a, b = b, a+b
 	}
-	fmt.Println(summed)
+	return sum
 }

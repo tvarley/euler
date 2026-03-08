@@ -1,18 +1,21 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'org.tvarley.euler.Main'
 
 repositories {
   jcenter()
 }
 
 dependencies {
-  compile "org.apache.logging.log4j:log4j-api:2.1"
-  compile "org.apache.logging.log4j:log4j-core:2.1"
+  implementation "org.apache.logging.log4j:log4j-api:2.1"
+  implementation "org.apache.logging.log4j:log4j-core:2.1"
 
-  testCompile 'junit:junit:4.12'
+  testImplementation 'junit:junit:4.12'
 }
 
 jar {
-  baseName = 'euler'
+  archiveBaseName = 'euler'
   version = '0.1.0'
 }
 

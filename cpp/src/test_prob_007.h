@@ -1,11 +1,7 @@
 #include "euler007.cpp"
-
-namespace{
-  TEST(Prob007,Known001){
-    EXPECT_EQ(13,nth_prime(6));
+TEST_CASE("Prob007 ", "[Prob007]"){
+    REQUIRE(nth_prime(6 == 13));
   }
-
-  TEST(Prob007,Answer){
-    EXPECT_EQ(104743,nth_prime(10001));
+TEST_CASE("Prob007 ", "[Prob007]"){
+    REQUIRE(nth_prime(10001 == 104743));
   }
-};

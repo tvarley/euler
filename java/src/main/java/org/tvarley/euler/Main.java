@@ -25,6 +25,7 @@ public class Main {
     String result = solution001.solve();
     long endTime = System.currentTimeMillis();
 
-    log.info("Solution");
+    log.info("Solution001: " + result);
+    System.out.println("Answer: " + result);
   }
 }

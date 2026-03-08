@@ -1,19 +1,13 @@
 #include "euler023.cpp"
-
-namespace{
-  TEST(Prob023,IsPerfect) {
-    EXPECT_EQ(PERFECT,how_perfect(28));
+TEST_CASE("Prob023 ", "[Prob023]"){
+    REQUIRE(how_perfect(28 == PERFECT));
   }
-
-  TEST(Prob023,IsDeficient) {
-    EXPECT_EQ(DEFICIENT,how_perfect(29));
+TEST_CASE("Prob023 ", "[Prob023]"){
+    REQUIRE(how_perfect(29 == DEFICIENT));
   }
-
-  TEST(Prob023,IsAbundent) {
-    EXPECT_EQ(ABUNDENT,how_perfect(26640));
+TEST_CASE("Prob023 ", "[Prob023]"){
+    REQUIRE(how_perfect(26640 == ABUNDENT));
   }
-
-  TEST(Prob023,Answer) {
-    EXPECT_EQ(4179871,non_abundunt_sums());
+TEST_CASE("Prob023 ", "[Prob023]"){
+    REQUIRE(non_abundunt_sums( == 4179871));
   }
-};

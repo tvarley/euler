@@ -1,7 +1,4 @@
 #include "euler013.cpp"
-
-namespace{
-  TEST(Prob013,Answer){
-    EXPECT_EQ("5537376230" , large_sum());
+TEST_CASE("Prob013 ", "[Prob013]"){
+    REQUIRE(large_sum( == "5537376230" ));
   }
-};
