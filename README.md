@@ -1,16 +1,28 @@
-:warning:
-THIS HAS MOVED
-New Location: https://gitlab.com/tvarley/euler
-:warning:
-
 # Euler
-Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
+
+This repository contains solutions to Project Euler problems in multiple programming languages. Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
 
 The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.
 
+This repository has been maintained for over a decade through manual development. As of today, we are transitioning to AI-driven development and expansion. All future source code updates will be handled by AI systems.
+
+## Languages
+
+This repository includes solutions in the following languages:
+
+- **C++** (cpp/)
+- **Go** (go/)
+- **Java** (java/)
+- **JavaScript** (javascript/)
+- **PHP** (php/)
+- **Ruby** (ruby/)
+- **Rust** (rust/)
+
+## Links
+
 [Project Euler](https://projecteuler.net/)
 
-See: [Go Euler Solutions](https://github.com/tvarley/go_euler)
+See also: [Go Euler Solutions](https://github.com/tvarley/go_euler)
 
 ## License
 
