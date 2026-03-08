@@ -31,37 +31,45 @@
 
 #include "simple_timer.h"
 
-typedef std::vector<uint32_t> Zbigint; 
+typedef std::vector<uint32_t> Zbigint;
 
-// class Zbigint : public std::vector<uint32_t>
-// {
-//   public:
-//     Zbigint operator+( const Zbigint& b) 
-//     {
-//       Zbigint result(1,3);
-//       return result;
-//     }
-// };
-// 
-double z1000_digit_fibinacci_number()
-{
-  double result{0};
-  {
-    simple_timer x("1000-digit Fibonacci Number");
+Zbigint add(const Zbigint& a, const Zbigint& b) {
+    Zbigint result;
+    uint32_t carry = 0;
+    size_t max_size = std::max(a.size(), b.size());
+    result.reserve(max_size + 1);
+    for (size_t i = 0; i < max_size || carry; ++i) {
+        uint32_t sum = carry;
+        if (i < a.size()) sum += a[i];
+        if (i < b.size()) sum += b[i];
+        result.push_back(sum % 1000000000);  // base 1e9
+        carry = sum / 1000000000;
+    }
+    return result;
+}
 
-    double fib1{1};
-    double fib2{1};
-    double index{0};
+size_t get_digit_count(const Zbigint& num) {
+    if (num.empty()) return 1;
+    size_t digits = (num.size() - 1) * 9;  // 9 digits per uint32_t except last
+    uint32_t last = num.back();
+    while (last > 0) {
+        digits++;
+        last /= 10;
+    }
+    return digits;
+}
 
-    do {
-      result = fib1 + fib2;
-      fib2 = fib1;
-      fib1 = result;
-      index++;
-      std::cout << index << ")result: " <<  std::to_string(result) << " - " << std::to_string(result).size() << std::endl;
-    } while( std::to_string(result).size() < 1000 );
-  }
-  return result;
+int z1000_digit_fibinacci_number() {
+    Zbigint fib1 = {1};
+    Zbigint fib2 = {1};
+    int index = 2;
+    while (get_digit_count(fib1) < 1000) {
+        Zbigint next = add(fib1, fib2);
+        fib2 = fib1;
+        fib1 = next;
+        index++;
+    }
+    return index;
 }
 
 #if ! defined UNITTEST_MODE

@@ -26,7 +26,7 @@
 #
 # Answer: 76576500
 
-require 'core_extensions/integer/divisors'
+require_relative './core_extensions/integer/divisors'
 
 # @see http://en.wikipedia.org/wiki/Triangular_number
 def triangle(num)

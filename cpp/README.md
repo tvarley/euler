@@ -1,15 +1,17 @@
 ## Dependencies
 
-1. `cmake` - https://cmake.org/
-1. `googletest` https://github.com/google/googletest
+1. A C++ compiler with C++17 support (e.g., `g++`)
+1. Catch2 testing framework (included as `src/catch_amalgamated.hpp`)
 
 ## Build and Test
 
 - Build all executables: `make all`
-- Run unit tests: `./bin/unittest`
+- Run unit tests: `./bin/unittest -s`
 - Run individual problem: `./bin/eulerXXX` (e.g., `./bin/euler026`)
 
 ## Problems Implemented
+
+*Note: Problems 1-25 were hand-written implementations. Problems 26-30 were generated with AI assistance.*
 
 - Problem 1: Multiples of 3 or 5
 - Problem 2: Even Fibonacci numbers
@@ -37,4 +39,8 @@
 - Problem 24: Lexicographic permutations
 - Problem 25: 1000-digit Fibonacci number
 - Problem 26: Reciprocal cycles
+- Problem 27: Quadratic primes
+- Problem 28: Number spiral diagonals
+- Problem 29: Distinct powers
+- Problem 30: Digit fifth powers
 

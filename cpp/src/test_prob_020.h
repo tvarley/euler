@@ -1,17 +1,17 @@
 #include "euler020.cpp"
-TEST_CASE("Prob020 ", "[Prob020]"){
-    REQUIRE(factorial_digit_sum(10 == 27));
+TEST_CASE("Prob020 Brute Small", "[Prob020]"){
+    REQUIRE(factorial_digit_sum(10) == 27);
   }
-TEST_CASE("Prob020 ", "[Prob020]"){
-    REQUIRE(factorial_digit_sum(100 == 648));
+TEST_CASE("Prob020 Brute Answer", "[Prob020]"){
+    REQUIRE(factorial_digit_sum(100) == 648);
   }
-TEST_CASE("Prob020 ", "[Prob020]"){
-    REQUIRE(factorial_digit_sum_opt(10 == 27));
+TEST_CASE("Prob020 Opt Small", "[Prob020]"){
+    REQUIRE(factorial_digit_sum_opt(10) == 27);
   }
-TEST_CASE("Prob020 ", "[Prob020]"){
-    REQUIRE(factorial_digit_sum_opt(100 == 648));
+TEST_CASE("Prob020 Opt Answer", "[Prob020]"){
+    REQUIRE(factorial_digit_sum_opt(100) == 648);
   }
-TEST_CASE("Prob020 ", "[Prob020]"){
+TEST_CASE("Prob020 Performance", "[Prob020]"){
 
     typedef std::chrono::high_resolution_clock my_clock;
     typedef std::chrono::microseconds timer_res;

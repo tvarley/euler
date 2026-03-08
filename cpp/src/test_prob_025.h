@@ -6,6 +6,6 @@
   // 
   //   REQUIRE(a + b == 3);
   // }
-TEST_CASE("Prob025 ", "[Prob025]"){
-    REQUIRE(z1000_digit_fibinacci_number( == 4782));
+TEST_CASE("Prob025 Answer", "[Prob025]"){
+    REQUIRE(z1000_digit_fibinacci_number() == 4782);
   }

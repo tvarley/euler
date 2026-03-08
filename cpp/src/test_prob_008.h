@@ -2,17 +2,17 @@
 
 #include "euler008.cpp"  // TODO: Split and inline
 #include "simple_timer.h"
-TEST_CASE("Prob008 ", "[Prob008]"){
-    REQUIRE(largest_product_brute(4 == 5832));
+TEST_CASE("Prob008 Brute 4", "[Prob008]"){
+    REQUIRE(largest_product_brute(4) == 5832);
   }
-TEST_CASE("Prob008 ", "[Prob008]"){
-    REQUIRE(largest_product_opt<4>( == 5832));
+TEST_CASE("Prob008 Opt 4", "[Prob008]"){
+    REQUIRE(largest_product_opt<4>() == 5832);
   }
-TEST_CASE("Prob008 ", "[Prob008]"){
-    REQUIRE(largest_product_brute(13 == 23514624000));
+TEST_CASE("Prob008 Brute 13", "[Prob008]"){
+    REQUIRE(largest_product_brute(13) == 23514624000);
   }
-TEST_CASE("Prob008 ", "[Prob008]"){
-    REQUIRE(largest_product_opt<13>( == 23514624000));
+TEST_CASE("Prob008 Opt 13", "[Prob008]"){
+    REQUIRE(largest_product_opt<13>() == 23514624000);
   }
 TEST_CASE("Prob008 ", "[Prob008]"){
     double a1{};

@@ -1,11 +1,11 @@
 #include "euler009.cpp"
-TEST_CASE("Prob009 ", "[Prob009]"){
-    REQUIRE(special_pyg_brute( == 31875000));
+TEST_CASE("Prob009 Brute", "[Prob009]"){
+    REQUIRE(special_pyg_brute() == 31875000);
   }
-TEST_CASE("Prob009 ", "[Prob009]"){
-    REQUIRE(special_pyg_opt( == 31875000));
+TEST_CASE("Prob009 Opt", "[Prob009]"){
+    REQUIRE(special_pyg_opt() == 31875000);
   }
-TEST_CASE("Prob009 ", "[Prob009]"){
+TEST_CASE("Prob009 Performance", "[Prob009]"){
 
     static const int ITER = 1000;
 
