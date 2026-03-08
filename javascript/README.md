@@ -1,4 +1,4 @@
-# Project Euler — JavaScript Solutions
+# Project Euler — JavaScript Solutions [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
 JavaScript solutions to [Project Euler](https://projecteuler.net/) problems 1–30.
 
@@ -25,6 +25,22 @@ yarn test
 node src/index.js
 ```
 
+## Examples
+
+```bash
+# Install dependencies
+yarn install
+
+# Run tests
+yarn test
+
+# Run all solutions
+node src/index.js
+
+# Run a specific solution
+node src/euler/solution001.js
+```
+
 ## Structure
 
 ```
@@ -35,6 +51,14 @@ src/
 test/
   solution001_test.js – solution030_test.js
 ```
+
+## Features
+
+- Modern JavaScript ES6+ syntax with async/await support
+- Comprehensive testing with Jest framework
+- Modular design with separate solution files
+- Node.js environment for server-side execution
+- Efficient algorithms optimized for JavaScript runtime
 
 ## Problems Solved
 
@@ -70,3 +94,16 @@ test/
 | 028 | Number Spiral Diagonals | 669171001 |
 | 029 | Distinct Powers | 9183 |
 | 030 | Digit Fifth Powers | 443839 |
+
+## Contributing
+
+To contribute:
+
+1. Implement a new solution file following the existing pattern
+2. Add corresponding tests in `test/`
+3. Update this README with the new problem entry
+4. Ensure `yarn test` passes
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.

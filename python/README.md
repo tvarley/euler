@@ -1,4 +1,4 @@
-# Project Euler Python Solutions
+# Project Euler Python Solutions [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
 This directory contains Python solutions for Project Euler problems 1 through 30.
 
@@ -9,6 +9,14 @@ This directory contains Python solutions for Project Euler problems 1 through 30
 - `run_all.py`: Script to execute all solutions
 - `requirements.txt`: Python dependencies
 - `pyproject.toml`: Configuration for Black and Ruff
+
+## Features
+
+- Clean, readable Python code following PEP 8 standards
+- Comprehensive testing with pytest framework
+- Code formatting with Black and linting with Ruff
+- Efficient algorithms optimized for performance
+- Modular design with separate solution files
 
 ## Setup
 
@@ -37,38 +45,59 @@ This directory contains Python solutions for Project Euler problems 1 through 30
    ruff check src/ tests/
    ```
 
+## Examples
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run all solutions
+python run_all.py
+
+# Run tests
+pytest
+
+# Format code
+black src/ tests/
+
+# Run a specific solution
+python src/euler001.py
+```
+
 ## Problems Solved
 
-1. Multiples of 3 and 5
-2. Even Fibonacci numbers
-3. Largest prime factor
-4. Largest palindrome product
-5. Smallest multiple
-6. Sum square difference
-7. 10001st prime
-8. Largest product in a series
-9. Special Pythagorean triplet
-10. Summation of primes
-11. Largest product in a grid
-12. Highly divisible triangular number
-13. Large sum
-14. Longest Collatz sequence
-15. Lattice paths
-16. Power digit sum
-17. Number letter counts
-18. Maximum path sum I
-19. Counting Sundays
-20. Factorial digit sum
-21. Amicable numbers
-22. Names scores
-23. Non-abundant sums
-24. Lexicographic permutations
-25. 1000-digit Fibonacci number
-26. Reciprocal cycles
-27. Quadratic primes
-28. Number spiral diagonals
-29. Distinct powers
-30. Digit fifth powers
+| #  | Problem | Answer |
+|----|---------|--------|
+| 001 | Multiples of 3 and 5 | 233168 |
+| 002 | Even Fibonacci numbers | 4613732 |
+| 003 | Largest prime factor | 6857 |
+| 004 | Largest palindrome product | 906609 |
+| 005 | Smallest multiple | 232792560 |
+| 006 | Sum square difference | 25164150 |
+| 007 | 10001st prime | 104743 |
+| 008 | Largest product in a series | 23514624000 |
+| 009 | Special Pythagorean triplet | 31875000 |
+| 010 | Summation of primes | 142913828922 |
+| 011 | Largest product in a grid | 70600674 |
+| 012 | Highly divisible triangular number | 76576500 |
+| 013 | Large sum | 5537376230 |
+| 014 | Longest Collatz sequence | 837799 |
+| 015 | Lattice paths | 137846528820 |
+| 016 | Power digit sum | 1366 |
+| 017 | Number letter counts | 21124 |
+| 018 | Maximum path sum I | 1074 |
+| 019 | Counting Sundays | 171 |
+| 020 | Factorial digit sum | 648 |
+| 021 | Amicable numbers | 31626 |
+| 022 | Names scores | 871198282 |
+| 023 | Non-abundant sums | 4179871 |
+| 024 | Lexicographic permutations | 2783915460 |
+| 025 | 1000-digit Fibonacci number | 4782 |
+| 026 | Reciprocal cycles | 983 |
+| 027 | Quadratic primes | -59231 |
+| 028 | Number spiral diagonals | 669171001 |
+| 029 | Distinct powers | 9183 |
+| 030 | Digit fifth powers | 443839 |
 
 ## Notes
 
@@ -78,3 +107,16 @@ This directory contains Python solutions for Project Euler problems 1 through 30
 - Tests verify against known Project Euler answers
 - For problem-specific data (grids, numbers, names), see the source code comments
 - Problem 22 requires `data/p022_names.txt` (included)
+
+## Contributing
+
+To contribute:
+
+1. Implement a new solution file following PEP 8
+2. Add corresponding tests in `tests/`
+3. Update this README with the new problem entry
+4. Ensure `pytest` passes and `black` formatting is applied
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.

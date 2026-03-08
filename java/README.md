@@ -1,4 +1,4 @@
-# Project Euler — Java Solutions
+# Project Euler — Java Solutions [![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://openjdk.java.net/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
 Java solutions to [Project Euler](https://projecteuler.net/) problems, built with Gradle.
 
@@ -22,6 +22,14 @@ java/
 │       └── UtilTest.java
 ```
 
+## Features
+
+- Object-oriented design with clean interfaces
+- Comprehensive unit testing with JUnit
+- Gradle build system for easy dependency management
+- Modular architecture with separate solution and utility classes
+- Efficient algorithms implemented in Java
+
 ## Requirements
 
 - Java 8+
@@ -37,6 +45,19 @@ java/
 
 ```bash
 ./gradlew test
+```
+
+## Examples
+
+```bash
+# Build the project
+./gradlew build
+
+# Run all tests
+./gradlew test
+
+# Run a specific test class
+./gradlew test --tests EulerTest
 ```
 
 ## Problems Solved
@@ -73,3 +94,16 @@ java/
 | 028 | Number spiral diagonals | 669171001 |
 | 029 | Distinct powers | 9183 |
 | 030 | Digit fifth powers | 443839 |
+
+## Contributing
+
+To contribute:
+
+1. Implement a new solution class following the existing pattern
+2. Add corresponding unit tests in `src/test/java/`
+3. Update this README with the new problem entry
+4. Ensure `./gradlew build && ./gradlew test` passes
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
