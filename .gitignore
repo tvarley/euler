@@ -33,3 +33,5 @@ cpp/bin/
 
 tags
 .crush.json
+logs/
+.internal/
