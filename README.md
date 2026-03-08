@@ -20,7 +20,7 @@ Project Euler is a series of challenging mathematical/computer programming probl
 
 This repository provides comprehensive solutions to the first 30 Project Euler problems in seven different programming languages: C++, Go, Java, JavaScript, Python, Ruby, and Rust. Each language implementation demonstrates optimal algorithms, performance considerations, and language-specific best practices. The solutions serve as educational examples for learning both mathematical problem-solving and programming techniques across paradigms.
 
-**Note:** Everything in this repository before this commit was hand-written. This repository is now 100% generated and maintained using AI assistance.
+**Note:** Everything in this repository before the ai_takeover tag was hand-written. This repository is now 100% generated and maintained using AI assistance.
 
 ### Project Goals
 
