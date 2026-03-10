@@ -1,4 +1,4 @@
-# Project Euler Solutions [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](cpp/) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](go/) [![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](java/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](javascript/) [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](python/) [![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)](ruby/) [![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](rust/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+# Project Euler Solutions [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](cpp/) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](go/) [![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](java/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](javascript/) [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](python/) [![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](rust/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ This repository contains solutions to [Project Euler](https://projecteuler.net/)
 
 Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
 
-This repository provides comprehensive solutions to the first 30 Project Euler problems in seven different programming languages: C++, Go, Java, JavaScript, Python, Ruby, and Rust. Each language implementation demonstrates optimal algorithms, performance considerations, and language-specific best practices. The solutions serve as educational examples for learning both mathematical problem-solving and programming techniques across paradigms.
+This repository provides comprehensive solutions to the first 31 Project Euler problems in six different programming languages: C++, Go, Java, JavaScript, Python, and Rust. Each language implementation demonstrates optimal algorithms, performance considerations, and language-specific best practices. The solutions serve as educational examples for learning both mathematical problem-solving and programming techniques across paradigms.
 
 **Note:** Everything in this repository before the ai_takeover tag was hand-written. This repository is now 100% generated and maintained using AI assistance.
 
@@ -26,18 +26,18 @@ This repository provides comprehensive solutions to the first 30 Project Euler p
 
 This personal research project focuses on several key objectives:
 
-- **Increased Project Euler Coverage**: Expand beyond the current 30 problems to provide solutions for more Project Euler challenges
+- **Increased Project Euler Coverage**: Expand beyond the current 31 problems to provide solutions for more Project Euler challenges
 - **More Languages**: Add implementations in additional programming languages to showcase diverse approaches and paradigms
 - **AI vs. Human Challenges**: Explore the intersection of artificial intelligence and human problem-solving, comparing algorithmic approaches and efficiency across different implementation strategies
 
 ## Features
 
-- **Multi-language implementations**: Compare approaches across seven programming languages
+- **Multi-language implementations**: Compare approaches across six programming languages
 - **Optimized algorithms**: Solutions designed for efficiency and clarity
 - **Comprehensive testing**: Unit tests verify correctness against known Project Euler answers
 - **Educational value**: Learn both mathematics and programming through practical examples
 - **Language-specific idioms**: Demonstrates best practices in each programming language
-- **Complete coverage**: Solutions for problems 1-30, with answers verified
+- **Complete coverage**: Solutions for problems 1-31, with answers verified
 
 ## Languages
 
@@ -48,8 +48,9 @@ This repository includes solutions in the following languages:
 - [**Java**](java/) - Object-oriented approaches with comprehensive testing via Gradle
 - [**JavaScript**](javascript/) - Node.js solutions with modern ES6+ syntax
 - [**Python**](python/) - Clean, readable code following PEP 8 standards
-- [**Ruby**](ruby/) - Elegant, expressive solutions using Ruby idioms
 - [**Rust**](rust/) - Memory-safe implementations with zero-cost abstractions
+
+**Note:** Ruby implementations are deprecated and no new solutions will be generated for it.
 
 ## Usage
 
@@ -61,7 +62,6 @@ Each language directory contains solutions to Project Euler problems. To run a s
 - **Java** (java/): `./gradlew run`
 - **JavaScript** (javascript/): `npm test` or `node src/eulerXXX.js`
 - **Python** (python/): `python src/eulerXXX.py`
-- **Ruby** (ruby/): `ruby lib/eulerXXX.rb` or `bundle exec rspec`
 
 ## Examples
 
@@ -108,12 +108,6 @@ cd rust
 cargo test
 ```
 
-### Ruby
-```bash
-cd ruby
-bundle exec rspec
-```
-
 ### JavaScript
 ```bash
 cd javascript
@@ -142,7 +136,7 @@ pytest
 
 Contributions are welcome! To add a new solution or improve existing ones:
 
-1. Choose a problem and language
+1. Choose a problem and language (C++, Go, Java, JavaScript, Python, or Rust)
 2. Implement the solution following the existing code style
 3. Add appropriate tests
 4. Update the README.md in the language directory

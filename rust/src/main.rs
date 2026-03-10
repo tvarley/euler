@@ -28,6 +28,7 @@ mod euler027;
 mod euler028;
 mod euler029;
 mod euler030;
+mod euler031;
 
 fn main() {
     println!("Hello, world!");
@@ -61,4 +62,5 @@ fn main() {
     println!("Euler028: {}", euler028::spiral_diagonals(1001));
     println!("Euler029: {}", euler029::distinct_powers(100));
     println!("Euler030: {}", euler030::digit_fifth_powers());
+    println!("Euler031: {}", euler031::coin_sums());
 }

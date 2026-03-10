@@ -58,6 +58,7 @@ check "euler027" euler027 "-59231"
 check "euler028" euler028 "669171001"
 check "euler029" euler029 "9183"
 check "euler030" euler030 "443839"
+check "euler031" euler031 "73682"
 
 echo "--------------------------------------"
 echo "Results: ${PASS} passed, ${FAIL} failed"

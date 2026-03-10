@@ -35,6 +35,7 @@ BINARIES=$(BIN)/euler001 \
 			$(BIN)/euler028 \
 			$(BIN)/euler029 \
 			$(BIN)/euler030 \
+			$(BIN)/euler031 \
 			$(BIN)/bowling \
 			$(BIN)/multiple_24 \
 			$(BIN)/unittest

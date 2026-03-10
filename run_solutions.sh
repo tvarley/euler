@@ -35,7 +35,7 @@ run_language "java" "./gradlew run"
 run_language "javascript" "node src/index.js"
 
 # Python
-run_language "python" "./venv/bin/python run_all.py"
+run_language "python" "python3 run_all.py"
 
 # Ruby
 run_language "ruby" "./run.sh"

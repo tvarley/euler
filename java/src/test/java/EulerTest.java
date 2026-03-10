@@ -39,6 +39,7 @@ import org.tvarley.euler.solutions.Solution027;
 import org.tvarley.euler.solutions.Solution028;
 import org.tvarley.euler.solutions.Solution029;
 import org.tvarley.euler.solutions.Solution030;
+import org.tvarley.euler.solutions.Solution031;
 
 public class EulerTest {
   @Test public void testSolution001() {
@@ -189,5 +190,10 @@ public class EulerTest {
   @Test public void testSolution030() {
     Solution solution030 = new Solution030();
     assertEquals("Solution 030 should return 443839", solution030.solve(), "443839" );
+  }
+
+  @Test public void testSolution031() {
+    Solution solution031 = new Solution031();
+    assertEquals("Solution 031 should return 73682", solution031.solve(), "73682" );
   }
 }
