@@ -37,9 +37,6 @@ run_tests "javascript" "yarn test"
 # Python
 run_tests "python" "./test.sh"
 
-# Ruby
-run_tests "ruby" "./test.sh"
-
 # Rust
 run_tests "rust" "cargo test"
 

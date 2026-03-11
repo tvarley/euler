@@ -13,7 +13,7 @@ check() {
     local expected="$3"
     local got
 
-    got=$(go run "$file" 2>&1)
+    got=$(go run "$file" 2>&1 | tr -d '\n')
 
     if [ "$got" = "$expected" ]; then
         printf "PASS  %-20s %s\n" "$label" "$got"
@@ -59,6 +59,15 @@ check "euler028" euler028.go "669171001"
 check "euler029" euler029.go "9183"
 check "euler030" euler030.go "443839"
 check "euler031" euler031.go "73682"
+check "euler032" euler032.go "45228"
+check "euler033" euler033.go "100"
+check "euler034" euler034.go "40730"
+check "euler035" euler035.go "55"
+check "euler036" euler036.go "872187"
+check "euler037" euler037.go "748317"
+check "euler038" euler038.go "932718654"
+check "euler039" euler039.go "840"
+check "euler040" euler040.go "210"
 
 echo "--------------------------------------"
 echo "Results: ${PASS} passed, ${FAIL} failed"

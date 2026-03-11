@@ -30,6 +30,16 @@ mod euler029;
 mod euler030;
 mod euler031;
 
+mod euler032;
+mod euler033;
+mod euler034;
+mod euler035;
+mod euler036;
+mod euler037;
+mod euler038;
+mod euler039;
+mod euler040;
+
 fn main() {
     println!("Hello, world!");
     println!("Euler001: {}", euler001::sum_natural_35(1000));
@@ -63,4 +73,13 @@ fn main() {
     println!("Euler029: {}", euler029::distinct_powers(100));
     println!("Euler030: {}", euler030::digit_fifth_powers());
     println!("Euler031: {}", euler031::coin_sums());
+    println!("Euler032: {}", euler032::pandigital_products());
+    println!("Euler033: {}", euler033::digit_cancelling_fractions());
+    println!("Euler034: {}", euler034::digit_factorials());
+    println!("Euler035: {}", euler035::circular_primes());
+    println!("Euler036: {}", euler036::double_base_palindromes());
+    println!("Euler037: {}", euler037::truncatable_primes());
+    println!("Euler038: {}", euler038::pandigital_multiples());
+    println!("Euler039: {}", euler039::integer_right_triangles());
+    println!("Euler040: {}", euler040::champernownes_constant());
 }

@@ -28,6 +28,16 @@ var solution027 = require('../src/euler/solution027');
 var solution028 = require('../src/euler/solution028');
 var solution029 = require('../src/euler/solution029');
 var solution030 = require('../src/euler/solution030');
+var solution031 = require('../src/euler/solution031');
+var solution032 = require('../src/euler/solution032');
+var solution033 = require('../src/euler/solution033');
+var solution034 = require('../src/euler/solution034');
+var solution035 = require('../src/euler/solution035');
+var solution036 = require('../src/euler/solution036');
+var solution037 = require('../src/euler/solution037');
+var solution038 = require('../src/euler/solution038');
+var solution039 = require('../src/euler/solution039');
+var solution040 = require('../src/euler/solution040');
 
 module.exports = () => {
   console.log(`Solution 001: ${solution001.answer()}`);
@@ -60,4 +70,14 @@ module.exports = () => {
   console.log(`Solution 028: ${solution028.answer()}`);
   console.log(`Solution 029: ${solution029.answer()}`);
   console.log(`Solution 030: ${solution030.answer()}`);
+  console.log(`Solution 031: ${solution031.answer()}`);
+  console.log(`Solution 032: ${solution032.answer()}`);
+  console.log(`Solution 033: ${solution033.answer()}`);
+  console.log(`Solution 034: ${solution034.answer()}`);
+  console.log(`Solution 035: ${solution035.answer()}`);
+  console.log(`Solution 036: ${solution036.answer()}`);
+  console.log(`Solution 037: ${solution037.answer()}`);
+  console.log(`Solution 038: ${solution038.answer()}`);
+  console.log(`Solution 039: ${solution039.answer()}`);
+  console.log(`Solution 040: ${solution040.answer()}`);
 }

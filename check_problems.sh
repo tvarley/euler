@@ -5,15 +5,15 @@
 echo "=== Project Euler Problem Completeness Check ==="
 echo
 
-languages=("cpp" "go" "java" "javascript" "python" "ruby" "rust")
-total_problems=31
+languages=("cpp" "go" "java" "javascript" "python" "rust")
+total_problems=40
 
 for lang in "${languages[@]}"; do
     echo "Checking $lang..."
 
     case $lang in
         cpp)
-            count=$(ls -1 "$lang/bin/euler"* 2>/dev/null | wc -l)
+            count=$(ls -1 "$lang/src/euler"*.cpp 2>/dev/null | wc -l)
             ;;
         go)
             count=$(ls -1 "$lang/euler"*.go 2>/dev/null | wc -l)

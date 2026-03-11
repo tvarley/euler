@@ -37,9 +37,6 @@ run_language "javascript" "node src/index.js"
 # Python
 run_language "python" "python3 run_all.py"
 
-# Ruby
-run_language "ruby" "./run.sh"
-
 # Rust
 run_language "rust" "cargo run"
 
