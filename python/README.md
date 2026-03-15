@@ -1,10 +1,10 @@
 # Project Euler Python Solutions [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
-This directory contains Python solutions for Project Euler problems 1 through 30.
+This directory contains Python solutions for Project Euler problems 1 through 50.
 
 ## Structure
 
-- `src/`: Solution files (euler001.py to euler030.py)
+- `src/`: Solution files (euler001.py to euler050.py)
 - `tests/`: Unit tests for each problem
 - `run_all.py`: Script to execute all solutions
 - `requirements.txt`: Python dependencies
@@ -98,6 +98,26 @@ python src/euler001.py
 | 028 | Number spiral diagonals | 669171001 |
 | 029 | Distinct powers | 9183 |
 | 030 | Digit fifth powers | 443839 |
+| 031 | Coin sums | 73682 |
+| 032 | Pandigital products | 45228 |
+| 033 | Digit cancelling fractions | 100 |
+| 034 | Digit factorials | 40730 |
+| 035 | Circular primes | 55 |
+| 036 | Double-base palindromes | 872187 |
+| 037 | Truncatable primes | 748317 |
+| 038 | Pandigital multiples | 932718654 |
+| 039 | Integer right triangles | 840 |
+| 040 | Champernowne's constant | 210 |
+| 041 | Pandigital prime | 7652413 |
+| 042 | Coded triangle numbers | 162 |
+| 043 | Sub-string divisibility | 16695334890 |
+| 044 | Pentagon numbers | 5482660 |
+| 045 | Triangular, pentagonal, and hexagonal | 1533776805 |
+| 046 | Goldbach's other conjecture | 5777 |
+| 047 | Distinct primes factors | 134043 |
+| 048 | Self powers | 9110846700 |
+| 049 | Prime permutations | 296962999629 |
+| 050 | Consecutive prime sum | 997651 |
 
 ## Notes
 
