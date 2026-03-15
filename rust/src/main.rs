@@ -40,6 +40,18 @@ mod euler038;
 mod euler039;
 mod euler040;
 
+mod euler041;
+mod euler042;
+mod euler043;
+mod euler044;
+mod euler045;
+
+mod euler046;
+mod euler047;
+mod euler048;
+mod euler049;
+mod euler050;
+
 fn main() {
     println!("Hello, world!");
     println!("Euler001: {}", euler001::sum_natural_35(1000));
@@ -82,4 +94,16 @@ fn main() {
     println!("Euler038: {}", euler038::pandigital_multiples());
     println!("Euler039: {}", euler039::integer_right_triangles());
     println!("Euler040: {}", euler040::champernownes_constant());
+
+    println!("Euler041: {}", euler041::pandigital_prime());
+    println!("Euler042: {}", euler042::coded_triangle_numbers());
+    println!("Euler043: {}", euler043::sub_string_divisibility());
+    println!("Euler044: {}", euler044::pentagon_numbers());
+    println!("Euler045: {}", euler045::triangular_pentagonal_hexagonal());
+
+    println!("Euler046: {}", euler046::goldbachs_other_conjecture());
+    println!("Euler047: {}", euler047::distinct_primes_factors());
+    println!("Euler048: {}", euler048::self_powers());
+    println!("Euler049: {}", euler049::prime_permutations());
+    println!("Euler050: {}", euler050::consecutive_prime_sum());
 }

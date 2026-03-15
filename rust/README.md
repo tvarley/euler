@@ -2,7 +2,7 @@
 
 ## Description
 
-This directory contains Rust solutions to Project Euler problems 1-30, leveraging Rust's performance, memory safety, and zero-cost abstractions. The implementations showcase Rust's strengths in systems programming and mathematical computing.
+This directory contains Rust solutions to Project Euler problems 1-45, leveraging Rust's performance, memory safety, and zero-cost abstractions. The implementations showcase Rust's strengths in systems programming and mathematical computing.
 
 ## Features
 
@@ -78,7 +78,7 @@ rust/
 
 ## Problems Solved
 
-*Note: Problems 1-6 were hand-written implementations. Problems 7-30 were generated with AI assistance.*
+*Note: Problems 1-6 were hand-written implementations. Problems 7-50 were generated with AI assistance.*
 
 | #  | Problem | Answer |
 |----|---------|--------|
@@ -112,6 +112,26 @@ rust/
 | 028 | Number spiral diagonals | 669171001 |
 | 029 | Distinct powers | 9183 |
 | 030 | Digit fifth powers | 443839 |
+| 031 | Coin sums | 73682 |
+| 032 | Pandigital products | 45228 |
+| 033 | Digit cancelling fractions | 100 |
+| 034 | Digit factorials | 40730 |
+| 035 | Circular primes | 55 |
+| 036 | Double-base palindromes | 872187 |
+| 037 | Truncatable primes | 748317 |
+| 038 | Pandigital multiples | 932718654 |
+| 039 | Integer right triangles | 840 |
+| 040 | Champernowne's constant | 210 |
+| 041 | Pandigital prime | 7652413 |
+| 042 | Coded triangle numbers | 162 |
+| 043 | Sub-string divisibility | 16695334890 |
+| 044 | Pentagon numbers | 5482660 |
+| 045 | Triangular, pentagonal, and hexagonal | 1533776805 |
+| 046 | Goldbach's other conjecture | 5777 |
+| 047 | Distinct primes factors | 134043 |
+| 048 | Self powers | 9110846700 |
+| 049 | Prime permutations | 296962999629 |
+| 050 | Consecutive prime sum | 997651 |
 
 ## Contributing
 

@@ -49,6 +49,16 @@ import org.tvarley.euler.solutions.Solution037;
 import org.tvarley.euler.solutions.Solution038;
 import org.tvarley.euler.solutions.Solution039;
 import org.tvarley.euler.solutions.Solution040;
+import org.tvarley.euler.solutions.Solution041;
+import org.tvarley.euler.solutions.Solution042;
+import org.tvarley.euler.solutions.Solution043;
+import org.tvarley.euler.solutions.Solution044;
+import org.tvarley.euler.solutions.Solution045;
+import org.tvarley.euler.solutions.Solution046;
+import org.tvarley.euler.solutions.Solution047;
+import org.tvarley.euler.solutions.Solution048;
+import org.tvarley.euler.solutions.Solution049;
+import org.tvarley.euler.solutions.Solution050;
 
 public class EulerTest {
   @Test public void testSolution001() {
@@ -249,5 +259,55 @@ public class EulerTest {
   @Test public void testSolution040() {
     Solution solution040 = new Solution040();
     assertEquals("Solution 040 should return 210", solution040.solve(), "210" );
+  }
+
+  @Test public void testSolution041() {
+    Solution solution041 = new Solution041();
+    assertEquals("Solution 041 should return 7652413", solution041.solve(), "7652413" );
+  }
+
+  @Test public void testSolution042() {
+    Solution solution042 = new Solution042();
+    assertEquals("Solution 042 should return 162", solution042.solve(), "162" );
+  }
+
+  @Test public void testSolution043() {
+    Solution solution043 = new Solution043();
+    assertEquals("Solution 043 should return 16695334890", solution043.solve(), "16695334890" );
+  }
+
+  @Test public void testSolution044() {
+    Solution solution044 = new Solution044();
+    assertEquals("Solution 044 should return 5482660", solution044.solve(), "5482660" );
+  }
+
+  @Test public void testSolution045() {
+    Solution solution045 = new Solution045();
+    assertEquals("Solution 045 should return 1533776805", solution045.solve(), "1533776805" );
+  }
+
+  @Test public void testSolution046() {
+    Solution solution046 = new Solution046();
+    assertEquals("Solution 046 should return 5777", solution046.solve(), "5777" );
+  }
+
+  @Test public void testSolution047() {
+    Solution solution047 = new Solution047();
+    assertEquals("Solution 047 should return 134043", solution047.solve(), "134043" );
+  }
+
+  @Test public void testSolution048() {
+    Solution solution048 = new Solution048();
+    assertEquals("Solution 048 should return 9110846700", solution048.solve(), "9110846700" );
+  }
+
+  @Test public void testSolution049() {
+    Solution solution049 = new Solution049();
+    assertEquals("Solution 049 should return 296962999629", solution049.solve(), "296962999629" );
+  }
+
+  @Test public void testSolution050() {
+    Solution solution050 = new Solution050();
+    assertEquals("Solution 050 should return 997651", solution050.solve(), "997651" );
   }
 }

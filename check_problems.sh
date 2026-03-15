@@ -6,7 +6,7 @@ echo "=== Project Euler Problem Completeness Check ==="
 echo
 
 languages=("cpp" "go" "java" "javascript" "python" "rust")
-total_problems=40
+total_problems=50
 
 for lang in "${languages[@]}"; do
     echo "Checking $lang..."

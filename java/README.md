@@ -94,6 +94,26 @@ java/
 | 028 | Number spiral diagonals | 669171001 |
 | 029 | Distinct powers | 9183 |
 | 030 | Digit fifth powers | 443839 |
+| 031 | Coin Sums | 73682 |
+| 032 | Pandigital Products | 45228 |
+| 033 | Digit Canceling Fractions | 100 |
+| 034 | Digit Factorials | 40730 |
+| 035 | Circular Primes | 55 |
+| 036 | Double-base Palindromes | 872187 |
+| 037 | Truncatable Primes | 748317 |
+| 038 | Pandigital Multiples | 932718654 |
+| 039 | Integer Right Triangles | 840 |
+| 040 | Champernowne's Constant | 210 |
+| 041 | Pandigital Prime | 7652413 |
+| 042 | Coded Triangle Numbers | 162 |
+| 043 | Sub-string Divisibility | 16695334890 |
+| 044 | Pentagon Numbers | 5482660 |
+| 045 | Triangular, Pentagonal, and Hexagonal | 1533776805 |
+| 046 | Goldbach's Other Conjecture | 5777 |
+| 047 | Distinct Primes Factors | 134043 |
+| 048 | Self Powers | 9110846700 |
+| 049 | Prime Permutations | 296962999629 |
+| 050 | Consecutive Prime Sum | 997651 |
 
 ## Contributing
 

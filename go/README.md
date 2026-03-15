@@ -2,7 +2,7 @@
 
 ## Description
 
-This directory contains Go solutions to Project Euler problems 1-30, leveraging Go's simplicity, concurrency features, and strong standard library. The implementations demonstrate idiomatic Go code with efficient algorithms and clear structure.
+This directory contains Go solutions to Project Euler problems 1-50, leveraging Go's simplicity, concurrency features, and strong standard library. The implementations demonstrate idiomatic Go code with efficient algorithms and clear structure.
 
 ## Features
 
@@ -58,7 +58,9 @@ go/
 ├── euler001.go          # Individual problem solutions
 ├── euler002.go
 ├── ...
+├── euler050.go
 ├── p022_names.txt       # Data files for specific problems
+├── p042_words.txt
 ├── run.sh               # Script to run all solutions
 ├── test.sh              # Script to run all tests
 └── README.md
@@ -98,6 +100,26 @@ go/
 | 028 | Number spiral diagonals | 669171001 |
 | 029 | Distinct powers | 9183 |
 | 030 | Digit fifth powers | 443839 |
+| 031 | Coin sums | 73682 |
+| 032 | Pandigital products | 45228 |
+| 033 | Digit cancelling fractions | 100 |
+| 034 | Digit factorials | 40730 |
+| 035 | Circular primes | 55 |
+| 036 | Double-base palindromes | 872187 |
+| 037 | Truncatable primes | 748317 |
+| 038 | Pandigital multiples | 932718654 |
+| 039 | Integer right triangles | 840 |
+| 040 | Champernowne's constant | 210 |
+| 041 | Pandigital prime | 7652413 |
+| 042 | Coded triangle numbers | 162 |
+| 043 | Sub-string divisibility | 16695334890 |
+| 044 | Pentagon numbers | 5482660 |
+| 045 | Triangular, pentagonal, and hexagonal | 1533776805 |
+| 046 | Goldbach's other conjecture | 5777 |
+| 047 | Distinct primes factors | 134043 |
+| 048 | Self powers | 9110846700 |
+| 049 | Prime permutations | 296962999629 |
+| 050 | Consecutive prime sum | 997651 |
 
 ## Contributing
 

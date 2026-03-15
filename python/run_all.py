@@ -8,7 +8,7 @@ import os
 # Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
-for i in range(1, 41):
+for i in range(1, 51):
     mod_name = f'euler{i:03d}'
     try:
         mod = __import__(mod_name)

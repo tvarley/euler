@@ -18,7 +18,7 @@ This repository contains solutions to [Project Euler](https://projecteuler.net/)
 
 Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
 
-This repository provides comprehensive solutions to the first 31 Project Euler problems in six different programming languages: C++, Go, Java, JavaScript, Python, and Rust. Each language implementation demonstrates optimal algorithms, performance considerations, and language-specific best practices. The solutions serve as educational examples for learning both mathematical problem-solving and programming techniques across paradigms.
+This repository provides comprehensive solutions to the first 50 Project Euler problems in six different programming languages: C++, Go, Java, JavaScript, Python, and Rust. Each language implementation demonstrates optimal algorithms, performance considerations, and language-specific best practices. The solutions serve as educational examples for learning both mathematical problem-solving and programming techniques across paradigms.
 
 **Note:** Everything in this repository before the ai_takeover tag was hand-written. This repository is now 100% generated and maintained using AI assistance.
 
@@ -26,7 +26,7 @@ This repository provides comprehensive solutions to the first 31 Project Euler p
 
 This personal research project focuses on several key objectives:
 
-- **Increased Project Euler Coverage**: Expand beyond the current 31 problems to provide solutions for more Project Euler challenges
+- **Increased Project Euler Coverage**: Provide comprehensive solutions for the first 50 Project Euler problems
 - **More Languages**: Add implementations in additional programming languages to showcase diverse approaches and paradigms
 - **AI vs. Human Challenges**: Explore the intersection of artificial intelligence and human problem-solving, comparing algorithmic approaches and efficiency across different implementation strategies
 
@@ -37,7 +37,7 @@ This personal research project focuses on several key objectives:
 - **Comprehensive testing**: Unit tests verify correctness against known Project Euler answers
 - **Educational value**: Learn both mathematics and programming through practical examples
 - **Language-specific idioms**: Demonstrates best practices in each programming language
-- **Complete coverage**: Solutions for problems 1-31, with answers verified
+- **Complete coverage**: Solutions for problems 1-50, with answers verified
 
 ## Languages
 

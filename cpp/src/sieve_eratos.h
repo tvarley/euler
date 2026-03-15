@@ -52,6 +52,11 @@ public:
 
   void dump(void);
 
+  bool is_prime(int n) const {
+    if (n >= m_upper || n < 2) return false;
+    return (*m_primes)[n];
+  }
+
 protected:
   void init()
   {
