@@ -2,7 +2,7 @@
 
 ## Description
 
-This directory contains C++ solutions to Project Euler problems 1-30, implemented using modern C++17 features. The solutions emphasize performance, readability, and algorithmic efficiency, showcasing C++ best practices for mathematical computing.
+This directory contains C++ solutions to Project Euler problems 1-50, implemented using modern C++17 features. The solutions emphasize performance, readability, and algorithmic efficiency, showcasing C++ best practices for mathematical computing.
 
 ## Features
 
@@ -79,7 +79,7 @@ cpp/
 
 ## Problems Solved
 
-*Note: Problems 1-25 were hand-written implementations. Problems 26-30 were generated with AI assistance.*
+*Note: Problems 1-25 were hand-written implementations. Problems 26-50 were generated with AI assistance.*
 
 | #  | Problem | Answer |
 |----|---------|--------|
@@ -113,6 +113,26 @@ cpp/
 | 028 | Number spiral diagonals | 669171001 |
 | 029 | Distinct powers | 9183 |
 | 030 | Digit fifth powers | 443839 |
+| 031 | How many different ways can £2 be made using any number of coins? | 73682 |
+| 032 | Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital. | 45228 |
+| 033 | If the product of these four fractions is given in its lowest common terms, find the value of the denominator. | 100 |
+| 034 | Find the sum of all numbers which are equal to the sum of the factorial of their digits. | 40730 |
+| 035 | How many circular primes are there below one million? | 55 |
+| 036 | Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2. | 872187 |
+| 037 | Find the sum of the only eleven primes that are both truncatable from left to right and right to left. | 748317 |
+| 038 | What is the largest 1 to 9 pandigital 9-digit number that can be formed as the concatenated product of an integer with (1,2, …, n) where n > 1? | 932718654 |
+| 039 | For which value of p ≤ 1000, is the number of solutions maximised? | 840 |
+| 040 | If d_n represents the nth digit of the fractional part, find the value of the following expression. | 210 |
+| 041 | What is the largest n-digit pandigital prime that exists? | 7652413 |
+| 042 | Using words.txt (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, how many are triangle words? | 162 |
+| 043 | Find the sum of all 0 to 9 pandigital numbers with this property. | 16695334890 |
+| 044 | Find the pair of pentagonal numbers, Pj and Pk, for which their sum and difference are pentagonal and D = |Pk - Pj| is minimised; what is the value of D? | 5482660 |
+| 045 | Find the next triangle number that is also pentagonal and hexagonal. | 1533776805 |
+| 046 | Goldbach's Other Conjecture | 5777 |
+| 047 | Distinct Primes Factors | 134043 |
+| 048 | Self Powers | 9110846700 |
+| 049 | Prime Permutations | 296962999629 |
+| 050 | Consecutive Prime Sum | 997651 |
 
 ## Contributing
 
