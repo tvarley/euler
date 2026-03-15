@@ -148,8 +148,6 @@ Please ensure all tests pass and the solution is efficient.
 
 [Project Euler](https://projecteuler.net/)
 
-[Go Euler Solutions](https://github.com/tvarley/go_euler)
-
 [Current Repository](https://github.com/tvarley/euler)
 
 ## License

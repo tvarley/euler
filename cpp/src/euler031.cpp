@@ -9,7 +9,6 @@
 // Answer: 73682
 
 // Authored by: Tim Varley 💘
-// Assisted-by: Grok Code Fast via Crush 💘 &lt;crush@charm.land&gt;
 
 #include <iostream>
 #include <vector>

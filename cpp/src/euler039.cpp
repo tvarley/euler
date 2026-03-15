@@ -7,7 +7,6 @@
 // For which value of p ≤ 1000, is the number of solutions maximised?
 
 // Authored by: Tim Varley 💘
-// Assisted-by: Grok Code Fast via Crush 💘 <crush@charm.land>
 
 #include <iostream>
 #include <vector>

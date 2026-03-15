@@ -16,7 +16,6 @@
 // Answer: 5777
 
 // Authored by: Tim Varley 💘
-// Assisted-by: Grok Code Fast via Crush 💘 <crush@charm.land>
 
 #include <iostream>
 #include "sieve_eratos.h"
