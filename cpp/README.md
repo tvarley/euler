@@ -2,7 +2,7 @@
 
 ## Description
 
-This directory contains C++ solutions to Project Euler problems 1-50, implemented using modern C++17 features. The solutions emphasize performance, readability, and algorithmic efficiency, showcasing C++ best practices for mathematical computing.
+This directory contains C++ solutions to Project Euler problems 1-60, implemented using modern C++17 features. The solutions emphasize performance, readability, and algorithmic efficiency, showcasing C++ best practices for mathematical computing.
 
 ## Features
 
@@ -79,7 +79,7 @@ cpp/
 
 ## Problems Solved
 
-*Note: Problems 1-25 were hand-written implementations. Problems 26-50 were generated with AI assistance.*
+*Note: Problems 1-25 were hand-written implementations. Problems 26-60 were generated with AI assistance.*
 
 | #  | Problem | Answer |
 |----|---------|--------|
@@ -133,6 +133,8 @@ cpp/
 | 048 | Self Powers | 9110846700 |
 | 049 | Prime Permutations | 296962999629 |
 | 050 | Consecutive Prime Sum | 997651 |
+| 059 | XOR Decryption | 129448 |
+| 060 | Prime Pair Sets | 26033 |
 
 ## Contributing
 

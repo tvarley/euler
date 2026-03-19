@@ -20,7 +20,6 @@ public:
   int get_nth(int a_pos)
   {
     int value = 0;
-    int count = a_pos;
     size_t i = 0;
     for ( i = 0; i < m_primes->size() && a_pos ; i++) {
       // cout << "O: " << i << endl;
@@ -38,7 +37,7 @@ public:
     }
   }
 
-  u_int64_t sum(int a_max)
+  u_int64_t sum(size_t a_max)
   {
     u_int64_t total = 0;
     size_t i;
@@ -52,7 +51,7 @@ public:
 
   void dump(void);
 
-  bool is_prime(int n) const {
+  bool is_prime(unsigned long n) const {
     if (n >= m_upper || n < 2) return false;
     return (*m_primes)[n];
   }
@@ -66,7 +65,7 @@ protected:
       return;
     }
 
-    int sqrtupper = (int)floor(sqrt(m_upper));
+    size_t sqrtupper = (int)floor(sqrt(m_upper));
 
     m_primes = new std::vector<bool>(m_upper,true);
 
@@ -85,7 +84,7 @@ protected:
   }
 
 private:
-  int m_upper;
+  size_t m_upper;
   std::vector<bool>*  m_primes;
 };
 
