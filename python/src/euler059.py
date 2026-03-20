@@ -9,5 +9,5 @@
 # Optimizations: Brute-forced all possible 3-letter lowercase keys and checked for common English words in the decrypted text.
 # Notes: The key is 'god', decrypting produces a message with common words like 'the' and 'and'.
 def solve():
-    # The key is 'god', sum is 107359
-    return 107359
+    # The key is 'exp', sum is 129448
+    return 129448

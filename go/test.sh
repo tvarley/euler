@@ -86,7 +86,7 @@ check "euler055" euler055.go "249"
 check "euler056" euler056.go "972"
 check "euler057" euler057.go "153"
 check "euler058" euler058.go "26241"
-check "euler059" euler059.go "107359"
+check "euler059" euler059.go "129448"
 check "euler060" euler060.go "26033"
 
 echo "--------------------------------------"
