@@ -61,7 +61,7 @@ run_tests "python" "./test.sh"
 run_lint "rust" "cargo clippy || echo 'cargo clippy not available, skipping'"
 run_tests "rust" "cargo test"
 
-# Ruby
-run_lint "ruby" "rubocop || echo 'rubocop not available, skipping'"
+# Ruby lint disabled - DO NOT ADD RUBY LINT BACK (user instruction)
+# run_lint "ruby" "rubocop || echo 'rubocop not available, skipping'"
 
 echo "=== All lints and tests completed ==="
