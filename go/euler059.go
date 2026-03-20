@@ -31,11 +31,27 @@ func main() {
 	for i, p := range parts {
 		cipher[i], _ = strconv.Atoi(p)
 	}
-	key := []int{103, 111, 100} // 'g', 'o', 'd'
-	sum := 0
-	for i, c := range cipher {
-		decrypted := c ^ key[i%3]
-		sum += decrypted
+	for a := 'a'; a <= 'z'; a++ {
+		for b := 'a'; b <= 'z'; b++ {
+			for c := 'a'; c <= 'z'; c++ {
+				key := []int{int(a), int(b), int(c)}
+				valid := true
+				text := ""
+				sum := 0
+				for i, ch := range cipher {
+					dec := ch ^ key[i%3]
+					if dec < 32 || dec > 126 {
+						valid = false
+						break
+					}
+					text += string(rune(dec))
+					sum += dec
+				}
+				if valid && strings.Contains(text, " the ") {
+					fmt.Println(sum)
+					return
+				}
+			}
+		}
 	}
-	fmt.Println(107359)
 }

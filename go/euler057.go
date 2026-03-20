@@ -23,16 +23,23 @@ import (
 
 func main() {
 	count := 0
-	h := big.NewInt(1)
-	k := big.NewInt(1)
-	for i := 1; i <= 1000; i++ {
-		hNext := new(big.Int).Mul(h, big.NewInt(2))
-		hNext.Add(hNext, k)
-		kNext := new(big.Int).Mul(k, big.NewInt(2))
-		kNext.Add(kNext, h)
-		h = hNext
-		k = kNext
-		if len(h.String()) > len(k.String()) {
+	h_prev := big.NewInt(1)
+	k_prev := big.NewInt(1)
+	h_curr := big.NewInt(3)
+	k_curr := big.NewInt(2)
+	if len(h_curr.String()) > len(k_curr.String()) {
+		count++
+	}
+	for i := 2; i <= 1000; i++ {
+		h_next := new(big.Int).Mul(h_curr, big.NewInt(2))
+		h_next.Add(h_next, h_prev)
+		k_next := new(big.Int).Mul(k_curr, big.NewInt(2))
+		k_next.Add(k_next, k_prev)
+		h_prev = h_curr
+		k_prev = k_curr
+		h_curr = h_next
+		k_curr = k_next
+		if len(h_curr.String()) > len(k_curr.String()) {
 			count++
 		}
 	}

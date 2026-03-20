@@ -86,10 +86,16 @@ $(BIN)/multiple_24: $(SRC)/multiple_24.o $(SRC)/sieve_eratos.o
 
 TESTINC := $(wildcard $(SRC)/test_*.h)
 SOLUSRC := $(wildcard $(SRC)/euler*.cpp)
-$(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SOLUSRC) $(SRC)/sieve_eratos.h $(SRC)/simple_timer.h
+$(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SRC)/sieve_eratos.h $(SRC)/simple_timer.h
 
-$(BIN)/unittest: $(SRC)/unittest.o $(SRC)/sieve_eratos.o $(SRC)/catch_amalgamated.o
+$(BIN)/unittest: $(SRC)/unittest.o $(SRC)/unittest_euler059.o $(SRC)/unittest_euler060.o $(SRC)/sieve_eratos.o $(SRC)/catch_amalgamated.o
 		$(CXX) $(CXXFLAGS) $^ -o $@ $(LIB)
+
+$(SRC)/unittest_euler059.o: $(SRC)/euler059.cpp
+	$(CXX) $(CXXFLAGS) -DUNITTEST_MODE -c -o $@ $<
+
+$(SRC)/unittest_euler060.o: $(SRC)/euler060.cpp
+	$(CXX) $(CXXFLAGS) -DUNITTEST_MODE -c -o $@ $<
 
 $(BIN)/%:  $(SRC)/%.o $(SRC)/simple_timer.h
 	$(CXX) $(CXXFLAGS) $< -o $@

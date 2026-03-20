@@ -80,6 +80,11 @@ int xor_decryption() {
                     max_word_count = word_count;
                     best_sum = sum;
                 }
+    }
+    }
+    }
+
+    return best_sum;
 }
 
 #if ! defined UNITTEST_MODE

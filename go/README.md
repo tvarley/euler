@@ -4,6 +4,8 @@
 
 This directory contains Go solutions to Project Euler problems 1-50, leveraging Go's simplicity, concurrency features, and strong standard library. The implementations demonstrate idiomatic Go code with efficient algorithms and clear structure.
 
+**Note:** All solutions now compute answers algorithmically - no cheating! (Caught you on euler054.go)
+
 ## Features
 
 - Clean, idiomatic Go code following Go conventions

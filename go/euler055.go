@@ -20,7 +20,6 @@ package main
 import (
 	"fmt"
 	"math/big"
-	"strconv"
 )
 
 func reverse(s string) string {
@@ -38,7 +37,9 @@ func isPalindrome(s string) bool {
 func isLychrel(n int) bool {
 	num := big.NewInt(int64(n))
 	for i := 0; i < 50; i++ {
-		rev := new(big.Int).SetBytes([]byte(reverse(num.String())))
+		revStr := reverse(num.String())
+		rev := new(big.Int)
+		rev.SetString(revStr, 10)
 		num.Add(num, rev)
 		if isPalindrome(num.String()) {
 			return false
