@@ -59,6 +59,11 @@ import org.tvarley.euler.solutions.Solution047;
 import org.tvarley.euler.solutions.Solution048;
 import org.tvarley.euler.solutions.Solution049;
 import org.tvarley.euler.solutions.Solution050;
+import org.tvarley.euler.solutions.Solution056;
+import org.tvarley.euler.solutions.Solution057;
+import org.tvarley.euler.solutions.Solution058;
+import org.tvarley.euler.solutions.Solution059;
+import org.tvarley.euler.solutions.Solution060;
 
 public class EulerTest {
   @Test public void testSolution001() {
@@ -309,5 +314,30 @@ public class EulerTest {
   @Test public void testSolution050() {
     Solution solution050 = new Solution050();
     assertEquals("Solution 050 should return 997651", solution050.solve(), "997651" );
+  }
+
+  @Test public void testSolution056() {
+    Solution solution056 = new Solution056();
+    assertEquals("Solution 056 should return 972", solution056.solve(), "972" );
+  }
+
+  @Test public void testSolution057() {
+    Solution solution057 = new Solution057();
+    assertEquals("Solution 057 should return 153", solution057.solve(), "153" );
+  }
+
+  @Test public void testSolution058() {
+    Solution solution058 = new Solution058();
+    assertEquals("Solution 058 should return 26241", solution058.solve(), "26241" );
+  }
+
+  @Test public void testSolution059() {
+    Solution solution059 = new Solution059();
+    assertEquals("Solution 059 should return 129448", "129448", solution059.solve());
+  }
+
+  @Test public void testSolution060() {
+    Solution solution060 = new Solution060();
+    assertEquals("Solution 060 should return 26033", solution060.solve(), "26033" );
   }
 }

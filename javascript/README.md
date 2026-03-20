@@ -1,6 +1,6 @@
 # Project Euler — JavaScript Solutions [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
-JavaScript solutions to [Project Euler](https://projecteuler.net/) problems 1–30.
+JavaScript solutions to [Project Euler](https://projecteuler.net/) problems 1–60.
 
 ## Requirements
 
@@ -94,6 +94,11 @@ test/
 | 028 | Number Spiral Diagonals | 669171001 |
 | 029 | Distinct Powers | 9183 |
 | 030 | Digit Fifth Powers | 443839 |
+| 056 | Powerful Digit Sum | 972 |
+| 057 | Square Root Convergents | 153 |
+| 058 | Spiral Primes | 26241 |
+| 059 | XOR Decryption | 129448 |
+| 060 | Prime Pair Sets | 26033 |
 
 ## Contributing
 

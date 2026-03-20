@@ -1,10 +1,10 @@
 # Project Euler Python Solutions [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
-This directory contains Python solutions for Project Euler problems 1 through 50.
+This directory contains Python solutions for Project Euler problems 1 through 60.
 
 ## Structure
 
-- `src/`: Solution files (euler001.py to euler050.py)
+- `src/`: Solution files (euler001.py to euler060.py)
 - `tests/`: Unit tests for each problem
 - `run_all.py`: Script to execute all solutions
 - `requirements.txt`: Python dependencies
@@ -66,8 +66,8 @@ python src/euler001.py
 
 ## Problems Solved
 
-| #  | Problem | Answer |
-|----|---------|--------|
+| #   | Problem | Answer |
+|-----|---------|--------|
 | 001 | Multiples of 3 and 5 | 233168 |
 | 002 | Even Fibonacci numbers | 4613732 |
 | 003 | Largest prime factor | 6857 |
@@ -118,6 +118,16 @@ python src/euler001.py
 | 048 | Self powers | 9110846700 |
 | 049 | Prime permutations | 296962999629 |
 | 050 | Consecutive prime sum | 997651 |
+| 051 | Prime Digit Replacements | 121313 |
+| 052 | Permuted Multiples | 142857 |
+| 053 | Combinatoric Selections | 4075 |
+| 054 | Poker Hands | 376 |
+| 055 | Lychrel Numbers | 249 |
+| 056 | Powerful Digit Sum | 972 |
+| 057 | Square Root Convergents | 153 |
+| 058 | Spiral Primes | 26241 |
+| 059 | XOR Decryption | 107359 |
+| 060 | Prime Pair Sets | 26033 |
 
 ## Notes
 
@@ -127,6 +137,8 @@ python src/euler001.py
 - Tests verify against known Project Euler answers
 - For problem-specific data (grids, numbers, names), see the source code comments
 - Problem 22 requires `data/p022_names.txt` (included)
+- Problem 54 requires `data/p054_poker.txt` (included)
+- Problem 59 requires `data/p059_cipher.txt` (included)
 
 ## Contributing
 

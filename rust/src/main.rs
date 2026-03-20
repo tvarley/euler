@@ -52,6 +52,18 @@ mod euler048;
 mod euler049;
 mod euler050;
 
+mod euler051;
+mod euler052;
+mod euler053;
+mod euler054;
+mod euler055;
+
+mod euler056;
+mod euler057;
+mod euler058;
+mod euler059;
+mod euler060;
+
 fn main() {
     println!("Hello, world!");
     println!("Euler001: {}", euler001::sum_natural_35(1000));
@@ -106,4 +118,16 @@ fn main() {
     println!("Euler048: {}", euler048::self_powers());
     println!("Euler049: {}", euler049::prime_permutations());
     println!("Euler050: {}", euler050::consecutive_prime_sum());
+
+    println!("Euler051: {}", euler051::prime_digit_replacements());
+    println!("Euler052: {}", euler052::permuted_multiples());
+    println!("Euler053: {}", euler053::combinatoric_selections());
+    println!("Euler054: {}", euler054::poker_hands());
+    println!("Euler055: {}", euler055::lychrel_numbers());
+
+    println!("Euler056: {}", euler056::powerful_digit_sum());
+    println!("Euler057: {}", euler057::square_root_convergents());
+    println!("Euler058: {}", euler058::spiral_primes());
+    println!("Euler059: {}", euler059::xor_decryption());
+    println!("Euler060: {}", euler060::prime_pair_sets());
 }

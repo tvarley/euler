@@ -120,6 +120,11 @@ go/
 | 048 | Self powers | 9110846700 |
 | 049 | Prime permutations | 296962999629 |
 | 050 | Consecutive prime sum | 997651 |
+| 051 | Prime Digit Replacements | 121313 |
+| 052 | Permuted Multiples | 142857 |
+| 053 | Combinatoric Selections | 4075 |
+| 054 | Poker Hands | 376 |
+| 055 | Lychrel Numbers | 249 |
 
 ## Contributing
 
