@@ -27,9 +27,6 @@ for lang in "${languages[@]}"; do
         python)
             count=$(ls -1 "$lang/src/euler"*.py 2>/dev/null | wc -l)
             ;;
-        ruby)
-            count=$(ls -1 "$lang/lib/euler"*.rb 2>/dev/null | wc -l)
-            ;;
         rust)
             # Count modules in lib.rs or separate files
             count=$(grep -c "^pub mod euler[0-9]" "$lang/src/lib.rs" 2>/dev/null || ls -1 "$lang/src/euler"*.rs 2>/dev/null | wc -l)

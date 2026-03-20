@@ -32,7 +32,7 @@ run_tests "go" "./test.sh"
 run_tests "java" "./gradlew test"
 
 # JavaScript
-run_tests "javascript" "yarn test"
+run_tests "javascript" "npm test"
 
 # Python
 run_tests "python" "./test.sh"
