@@ -40,9 +40,9 @@ pub fn largest_product_in_grid(adjacent: usize) -> u64 {
     let mut max_product = 0u64;
 
     // Horizontal
-    for i in 0..rows {
+    for row in &grid {
         for j in 0..=(cols - adjacent) {
-            let product = (0..adjacent).map(|k| grid[i][j + k] as u64).product();
+            let product = (0..adjacent).map(|k| row[j + k] as u64).product();
             if product > max_product {
                 max_product = product;
             }

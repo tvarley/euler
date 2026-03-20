@@ -20,8 +20,8 @@ pub fn sum_primes_below(limit: usize) -> u64 {
         }
     }
     let mut sum = 0u64;
-    for i in 2..=limit {
-        if is_prime[i] {
+    for (i, &prime) in is_prime.iter().enumerate().skip(2).take(limit - 1) {
+        if prime {
             sum += i as u64;
         }
     }
