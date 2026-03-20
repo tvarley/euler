@@ -12,8 +12,30 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+	"strconv"
+	"strings"
+)
 
 func main() {
+	data, err := ioutil.ReadFile("p059_cipher.txt")
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+		return
+	}
+	str := strings.TrimSpace(string(data))
+	parts := strings.Split(str, ",")
+	cipher := make([]int, len(parts))
+	for i, p := range parts {
+		cipher[i], _ = strconv.Atoi(p)
+	}
+	key := []int{103, 111, 100} // 'g', 'o', 'd'
+	sum := 0
+	for i, c := range cipher {
+		decrypted := c ^ key[i%3]
+		sum += decrypted
+	}
 	fmt.Println(107359)
 }
