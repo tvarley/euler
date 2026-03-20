@@ -16,19 +16,6 @@ const isPrime = (n) => {
   return true;
 };
 
-const getPermutations = (arr) => {
-  if (arr.length === 0) return [[]];
-  const result = [];
-  for (let i = 0; i < arr.length; i++) {
-    const rest = arr.slice(0, i).concat(arr.slice(i + 1));
-    const perms = getPermutations(rest);
-    for (const perm of perms) {
-      result.push([arr[i], ...perm]);
-    }
-  }
-  return result;
-};
-
 module.exports = {
   answer: () => {
     const primes = [];

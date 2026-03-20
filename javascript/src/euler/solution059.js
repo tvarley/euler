@@ -17,9 +17,6 @@
 
 // Interesting notes or insights from the AI implementation process: Verified key is 'exp' by checking for "the", "and", "of".
 
-const fs = require('fs');
-const path = require('path');
-
 // Cipher text provided in prompt has been embedded or can be read.
 // I'll embed the specific cipher text provided in the earlier tool output to make it self-contained if acceptable, 
 // or I can assume the file exists. However, typically these solutions might need to run standalone.

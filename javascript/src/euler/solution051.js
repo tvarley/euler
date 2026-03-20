@@ -14,16 +14,6 @@
 
 // Interesting notes or insights from the AI implementation process: The solution involves finding patterns of digits to replace and checking prime families.
 
-const isPrime = (n) => {
-  if (n <= 1) return false;
-  if (n <= 3) return true;
-  if (n % 2 === 0 || n % 3 === 0) return false;
-  for (let i = 5; i * i <= n; i += 6) {
-    if (n % i === 0 || n % (i + 2) === 0) return false;
-  }
-  return true;
-};
-
 const generatePrimes = (limit) => {
   const sieve = new Array(limit + 1).fill(true);
   sieve[0] = sieve[1] = false;

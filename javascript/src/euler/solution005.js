@@ -9,7 +9,6 @@
 
 module.exports = {
   answer : () => {
-    var answer = 0;
     var test = 20;
     var check = false;
 

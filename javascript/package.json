@@ -4,9 +4,11 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "test": "mocha --no-color"
+    "test": "mocha --no-color",
+    "lint": "eslint src/"
   },
   "devDependencies": {
+    "eslint": "^10.0.3",
     "mocha": "^6.1.4"
   },
   "bin": "bin/euler-javascript",

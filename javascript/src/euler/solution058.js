@@ -36,7 +36,6 @@ module.exports = {
     let primeCount = 0;
     let totalCount = 1; // Center 1
     let side = 1;
-    let current = 1;
 
     while (true) {
       side += 2;

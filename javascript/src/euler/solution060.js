@@ -67,7 +67,6 @@ function millerRabin(n, k) {
 
 function powerMod(base, exponent, modulus) {
   if (modulus === 1) return 0;
-  let result = 1;
   base = base % modulus;
   let exp = BigInt(exponent);
   let baseBig = BigInt(base);
@@ -100,7 +99,6 @@ const checkPair = (p1, p2) => {
 module.exports = {
   answer: () => {
     // Generate primes
-    const primes = [2, 3];
     // We can assume primes won't be extremely large for the sum to be minimal
     // 3, 7, 109, 673 sum = 792.
     // Try primes up to 10000 first.
