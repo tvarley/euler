@@ -26,7 +26,7 @@ pub fn sum_even_fib(upper: u32) -> u32
         fib2 = fib1;
         fib1 = result;
     }
-    return summed;
+    summed
 }
 
 #[cfg(test)]

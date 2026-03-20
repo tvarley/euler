@@ -24,7 +24,7 @@ pub fn sum_squares(size: u32) -> u32
         square_sum += i;
     }
 
-    return (square_sum * square_sum) - sum_square;
+    (square_sum * square_sum) - sum_square
 }
 
 #[cfg(test)]

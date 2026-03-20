@@ -24,7 +24,7 @@ pub fn prob005_brute_force(max: u32) -> u32
             test += 20;
         }
     }
-    return test;
+    test
 }
 
 #[cfg(test)]

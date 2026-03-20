@@ -25,10 +25,8 @@ pub fn pentagon_numbers() -> u64 {
             let pk = pentagons[j];
             let sum = pj + pk;
             let diff = pk - pj;
-            if pent_set.contains(&sum) && pent_set.contains(&diff) {
-                if diff < min_d {
-                    min_d = diff;
-                }
+            if pent_set.contains(&sum) && pent_set.contains(&diff) && diff < min_d {
+                min_d = diff;
             }
         }
     }

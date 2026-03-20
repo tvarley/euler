@@ -15,10 +15,8 @@
 pub fn goldbachs_other_conjecture() -> u64 {
     let mut n = 9;
     loop {
-        if !is_prime(n) && n % 2 == 1 {
-            if !can_write_as_prime_plus_twice_square(n) {
-                return n;
-            }
+        if !is_prime(n) && n % 2 == 1 && !can_write_as_prime_plus_twice_square(n) {
+            return n;
         }
         n += 2;
     }

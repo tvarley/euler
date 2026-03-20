@@ -26,7 +26,7 @@ fn binomial(n: u64, k: u64) -> u64 {
     let mut res = 1u64;
     for i in 0..k {
         res = res.saturating_mul(n - i);
-        res = res / (i + 1);
+        res /= i + 1;
     }
     res
 }

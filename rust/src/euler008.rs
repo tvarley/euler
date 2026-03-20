@@ -33,7 +33,7 @@ pub fn largest_product_in_series(adjacent: usize) -> u64 {
     let digits: Vec<u64> = DIGITS.chars().map(|c| c.to_digit(10).unwrap() as u64).collect();
     let mut max_product = 0u64;
     for window in digits.windows(adjacent) {
-        let product = window.iter().fold(1u64, |acc, &x| acc * x);
+        let product = window.iter().product::<u64>();
         if product > max_product {
             max_product = product;
         }

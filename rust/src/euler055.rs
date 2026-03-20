@@ -14,7 +14,6 @@
 // Answer: 249
 
 use num_bigint::BigUint;
-use num_traits::{Zero, One};
 
 pub fn lychrel_numbers() -> u32 {
     let mut count = 0;

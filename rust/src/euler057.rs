@@ -13,7 +13,6 @@
 // Answer: 153
 
 use num_bigint::BigUint;
-use num_traits::{One, Zero};
 
 pub fn square_root_convergents() -> u32 {
     let mut count = 0;

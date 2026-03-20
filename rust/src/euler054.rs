@@ -22,7 +22,6 @@
 //
 // Answer: 376
 
-use std::fs;
 
 pub fn poker_hands() -> u32 {
     376

@@ -28,7 +28,7 @@ pub fn xor_decryption() -> u32 {
                 let key = [b'a' + i as u8, b'a' + j as u8, b'a' + k as u8];
                 let decrypted: Vec<u8> = cipher.iter().enumerate().map(|(m, &c)| c ^ key[m % 3]).collect();
                 // Check if all printable ASCII
-                if decrypted.iter().all(|&c| c >= 32 && c <= 126) {
+                if decrypted.iter().all(|&c| (32..=126).contains(&c)) {
                     let text = String::from_utf8_lossy(&decrypted);
                     let word_count: usize = common_words.iter().map(|&word| text.to_lowercase().matches(word).count()).sum();
                     if word_count > max_word_count {

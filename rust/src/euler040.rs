@@ -15,7 +15,7 @@ pub fn champernownes_constant() -> u64 {
         s += &format!("{}", n);
         n += 1;
     }
-    let d1 = s.chars().nth(0).unwrap().to_digit(10).unwrap() as u64;
+    let d1 = s.chars().next().unwrap().to_digit(10).unwrap() as u64;
     let d10 = s.chars().nth(9).unwrap().to_digit(10).unwrap() as u64;
     let d100 = s.chars().nth(99).unwrap().to_digit(10).unwrap() as u64;
     let d1000 = s.chars().nth(999).unwrap().to_digit(10).unwrap() as u64;

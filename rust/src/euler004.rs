@@ -16,7 +16,7 @@ fn palindrome_test(test_me: u64) -> bool
         original /= 10;
     }
 
-    return test_me == reversed;
+    test_me == reversed
 }
 
 pub fn prob004_brute_force() -> u64
@@ -25,14 +25,12 @@ pub fn prob004_brute_force() -> u64
     for i in (100..999).rev() {
         for j in (100..999).rev() {
             let t = i * j;
-            if palindrome_test(t) {
-                if t > max_pali {
-                    max_pali = t;
-                }
+            if palindrome_test(t) && t > max_pali {
+                max_pali = t;
             }
         }
     }
-    return max_pali;
+    max_pali
 }
 
 #[cfg(test)]

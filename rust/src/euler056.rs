@@ -6,7 +6,6 @@
 // Answer: 972
 
 use num_bigint::BigUint;
-use num_traits::One;
 
 pub fn powerful_digit_sum() -> u32 {
     let mut max_sum = 0;

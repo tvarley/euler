@@ -14,7 +14,7 @@ pub fn sum_natural_35(upper:u32) -> u32
             sum += i;
         }
     }
-    return sum;
+    sum
 }
 
 #[cfg(test)]

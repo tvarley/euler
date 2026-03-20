@@ -14,18 +14,18 @@ pub fn largest_prime_factor(number: u64) -> u64
 
     while divisor % 2 == 0 {
         answer = 2;
-        divisor = divisor/2;
+        divisor /= 2;
     }
 
     while divisor != 1 {
         while divisor % point == 0 {
             answer = point;
-            divisor = divisor/point;
+            divisor /= point;
         }
         point += 2;
     }
 
-    return answer;
+    answer
 }
 
 #[cfg(test)]

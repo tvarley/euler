@@ -15,7 +15,7 @@ pub fn lexicographic_permutation(mut n: usize) -> String {
     let mut digits = vec![0usize, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     let mut result = String::new();
     n -= 1; // convert to 0-indexed
-    let mut factorials = vec![1usize; 10];
+    let mut factorials = [1usize; 10];
     for i in 1..10 {
         factorials[i] = factorials[i - 1] * i;
     }
