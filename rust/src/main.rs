@@ -64,6 +64,24 @@ mod euler058;
 mod euler059;
 mod euler060;
 
+mod euler061;
+
+mod euler062;
+mod euler063;
+mod euler064;
+mod euler065;
+
+mod euler066;
+mod euler067;
+mod euler068;
+mod euler069;
+mod euler070;
+mod euler071;
+mod euler072;
+mod euler073;
+mod euler074;
+mod euler075;
+
 fn main() {
     println!("Hello, world!");
     println!("Euler001: {}", euler001::sum_natural_35(1000));
@@ -130,4 +148,22 @@ fn main() {
     println!("Euler058: {}", euler058::spiral_primes());
     println!("Euler059: {}", euler059::xor_decryption());
     println!("Euler060: {}", euler060::prime_pair_sets());
+
+    println!("Euler061: {}", euler061::cyclical_figurate_numbers());
+
+    println!("Euler062: {}", euler062::cubic_permutations());
+    println!("Euler063: {}", euler063::powerful_digit_counts());
+    println!("Euler064: {}", euler064::odd_period_square_roots());
+    println!("Euler065: {}", euler065::convergents_of_e());
+
+    println!("Euler066: {}", euler066::diophantine_equation());
+    println!("Euler067: {}", euler067::maximum_path_sum_ii());
+    println!("Euler068: {}", euler068::magic_5_gon_ring());
+    println!("Euler069: {}", euler069::totient_maximum());
+    println!("Euler070: {}", euler070::totient_permutation());
+    println!("Euler071: {}", euler071::ordered_fractions());
+    println!("Euler072: {}", euler072::counting_fractions());
+    println!("Euler073: {}", euler073::counting_fractions_in_a_range());
+    println!("Euler074: {}", euler074::digit_factorial_chains());
+    println!("Euler075: {}", euler075::singular_integer_right_triangles());
 }

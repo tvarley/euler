@@ -79,7 +79,7 @@ cpp/
 
 ## Problems Solved
 
-*Note: Problems 1-25 were hand-written implementations. Problems 26-60 were generated with AI assistance.*
+*Note: Problems 1-25 were hand-written implementations. Problems 26-75 were generated with AI assistance.*
 
 | #  | Problem | Answer |
 |----|---------|--------|
@@ -133,8 +133,31 @@ cpp/
 | 048 | Self Powers | 9110846700 |
 | 049 | Prime Permutations | 296962999629 |
 | 050 | Consecutive Prime Sum | 997651 |
+| 051 | Prime Digit Replacements | 121313 |
+| 052 | Permuted Multiples | 142857 |
+| 053 | Combinatoric Selections | 4075 |
+| 054 | Poker Hands | 376 |
+| 055 | Lychrel Numbers | 249 |
+| 056 | Powerful Digit Sum | 972 |
+| 057 | Square Root Convergents | 153 |
+| 058 | Spiral Primes | 26241 |
 | 059 | XOR Decryption | 129448 |
 | 060 | Prime Pair Sets | 26033 |
+| 061 | Cyclical Figurate Numbers | 28684 |
+| 062 | Cubic Permutations | 127035954683 |
+| 063 | Substring Divisibility | 16695334890 |
+| 064 | Odd Period Square Roots | 1322 |
+| 065 | Convergents of e | 272 |
+| 066 | Diophantine Equation | 661 |
+| 067 | Maximum Path Sum II | 7273 |
+| 068 | Magic 5-gon Ring | 6531031914842725 |
+| 069 | Totient Maximum | 510510 |
+| 070 | Totient Permutation | 8319823 |
+| 071 | Ordered Fractions | 428570 |
+| 072 | Counting Fractions | 303963552391 |
+| 073 | Counting Fractions in a Range | 7295372 |
+| 074 | Digit Factorial Chains | 402 |
+| 075 | Singular Integer Right Triangles | 161667 |
 
 ## Contributing
 

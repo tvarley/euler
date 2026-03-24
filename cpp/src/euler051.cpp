@@ -25,6 +25,7 @@
 #include <vector>
 #include <string>
 #include <unordered_set>
+#include <algorithm>
 #include "sieve_eratos.h"
 
 bool is_prime(const CSieveOfEratosthenes& sieve, int n) {
@@ -40,26 +41,27 @@ int prime_digit_replacements() {
     }
     int result = -1;
     for (int p : primes) {
+        if (p < 100000) continue; // start from 6 digits as per Python
         std::string s = std::to_string(p);
         int len = s.size();
-        std::unordered_set<char> digits;
-        for (char c : s) digits.insert(c);
-        for (char orig_d : digits) {
-            std::vector<int> pos;
-            for (int i = 0; i < len; ++i) {
-                if (s[i] == orig_d) pos.push_back(i);
-            }
-            if (pos.size() < 2) continue;
-            int max_family = 1; // original
-            for (char rep = '0'; rep <= '9'; ++rep) {
-                if (rep == orig_d) continue;
+        for (int mask = 1; mask < (1 << len); ++mask) {
+            std::vector<int> family;
+            for (int d = 0; d < 10; ++d) {
+                if (d == 0 && (mask & 1)) continue; // no leading zero
                 std::string news = s;
-                for (int idx : pos) news[idx] = rep;
+                for (int i = 0; i < len; ++i) {
+                    if (mask & (1 << i)) {
+                        news[i] = '0' + d;
+                    }
+                }
                 int num = std::stoi(news);
-                if (num > 0 && sieve.is_prime(num)) ++max_family;
+                if (sieve.is_prime(num)) {
+                    family.push_back(num);
+                }
             }
-            if (max_family >= 8) {
-                if (result == -1 || p < result) result = p;
+            if (family.size() == 8) {
+                int min_in_family = *std::min_element(family.begin(), family.end());
+                if (result == -1 || min_in_family < result) result = min_in_family;
             }
         }
     }

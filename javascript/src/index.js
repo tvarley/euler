@@ -58,6 +58,11 @@ var solution057 = require('../src/euler/solution057');
 var solution058 = require('../src/euler/solution058');
 var solution059 = require('../src/euler/solution059');
 var solution060 = require('../src/euler/solution060');
+var solution061 = require('../src/euler/solution061');
+var solution062 = require('../src/euler/solution062');
+var solution063 = require('../src/euler/solution063');
+var solution064 = require('../src/euler/solution064');
+var solution065 = require('../src/euler/solution065');
 
 module.exports = () => {
   console.log(`Solution 001: ${solution001.answer()}`);
@@ -120,4 +125,9 @@ module.exports = () => {
   console.log(`Solution 058: ${solution058.answer()}`);
   console.log(`Solution 059: ${solution059.answer()}`);
   console.log(`Solution 060: ${solution060.answer()}`);
+  console.log(`Solution 061: ${solution061.answer()}`);
+  console.log(`Solution 062: ${solution062.answer()}`);
+  console.log(`Solution 063: ${solution063.answer()}`);
+  console.log(`Solution 064: ${solution064.answer()}`);
+  console.log(`Solution 065: ${solution065.answer()}`);
 }

@@ -2,7 +2,7 @@
 
 ## Description
 
-This directory contains Go solutions to Project Euler problems 1-50, leveraging Go's simplicity, concurrency features, and strong standard library. The implementations demonstrate idiomatic Go code with efficient algorithms and clear structure.
+This directory contains Go solutions to Project Euler problems 1-75, leveraging Go's simplicity, concurrency features, and strong standard library. The implementations demonstrate idiomatic Go code with efficient algorithms and clear structure.
 
 **Note:** All solutions now compute answers algorithmically - no cheating! (Caught you on euler054.go)
 
@@ -127,6 +127,22 @@ go/
 | 053 | Combinatoric Selections | 4075 |
 | 054 | Poker Hands | 376 |
 | 055 | Lychrel Numbers | 249 |
+| 061 | Cyclical Figurate Numbers | 28684 |
+| 062 | Cubic Permutations | 127035954683 |
+| 063 | Powerful Digit Counts | 49 |
+| 064 | Odd Period Square Roots | 1322 |
+| 065 | Convergents of e | 272 |
+
+| 066 | Diophantine equation | 661 |
+| 067 | Maximum path sum II | 7273 |
+| 068 | Magic 5-gon ring | 6531031914842725 |
+| 069 | Totient maximum | 510510 |
+| 070 | Totient permutation | 8319823 |
+| 071 | Ordered fractions | 428571 |
+| 072 | Counting fractions | 303963552391 |
+| 073 | Counting fractions in a range | 7295372 |
+| 074 | Digit factorial chains | 402 |
+| 075 | Singular integer right triangles | 161667 |
 
 ## Contributing
 

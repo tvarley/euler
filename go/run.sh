@@ -18,6 +18,6 @@ for f in euler001.go euler002.go euler003.go euler004.go euler005.go euler006.go
           euler023.go euler024.go euler025.go euler026.go euler027.go \
           euler028.go euler029.go euler030.go euler031.go euler032.go \
           euler033.go euler034.go euler035.go euler036.go euler037.go \
-          euler038.go euler039.go euler040.go euler041.go euler042.go euler043.go euler044.go euler045.go euler046.go euler047.go euler048.go euler049.go euler050.go; do
+          euler038.go euler039.go euler040.go euler041.go euler042.go euler043.go euler044.go euler045.go euler046.go euler047.go euler048.go euler049.go euler050.go euler051.go euler052.go euler053.go euler054.go euler055.go euler056.go euler057.go euler058.go euler059.go euler060.go euler061.go euler062.go euler063.go euler064.go euler065.go euler066.go euler067.go euler068.go euler069.go euler070.go euler071.go euler072.go euler073.go euler074.go euler075.go; do
     run_problem "$f"
 done

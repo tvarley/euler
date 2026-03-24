@@ -1,6 +1,6 @@
 # Project Euler Python Solutions [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
-This directory contains Python solutions for Project Euler problems 1 through 60.
+This directory contains Python solutions for Project Euler problems 1 through 75.
 
 ## Structure
 
@@ -126,8 +126,23 @@ python src/euler001.py
 | 056 | Powerful Digit Sum | 972 |
 | 057 | Square Root Convergents | 153 |
 | 058 | Spiral Primes | 26241 |
-| 059 | XOR Decryption | 107359 |
+| 059 | XOR Decryption | 129448 |
 | 060 | Prime Pair Sets | 26033 |
+| 061 | Cyclical Figurate Numbers | 28684 |
+| 062 | Cubic Permutations | 127035954683 |
+| 063 | Powerful Digit Counts | 49 |
+| 064 | Odd Period Square Roots | 1322 |
+| 065 | Convergents of e | 272 |
+| 066 | Diophantine equation | 661 |
+| 067 | Maximum path sum II | 7273 |
+| 068 | Magic 5-gon ring | 6531031914842725 |
+| 069 | Totient maximum | 510510 |
+| 070 | Totient permutation | 8319823 |
+| 071 | Ordered fractions | 428570 |
+| 072 | Counting fractions | 303963552391 |
+| 073 | Counting fractions in a range | 7295372 |
+| 074 | Digit factorial chains | 402 |
+| 075 | Singular integer right triangles | 161667 |
 
 ## Notes
 

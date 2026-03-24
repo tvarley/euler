@@ -1,6 +1,6 @@
 #include "catch_amalgamated.hpp"
 
-#define UNITTEST_MODE 1 // Exclude local main mostly
+#define UNITTEST_MODE 1 
 
 #include "test_sieve_eratos.h"
 #include "test_prob_001.h"
@@ -59,3 +59,18 @@
 #include "test_prob_055.h"
 #include "test_prob_059.h"
 #include "test_prob_060.h"
+#include "test_prob_061.h"
+#include "test_prob_062.h"
+#include "test_prob_063.h"
+#include "test_prob_064.h"
+#include "test_prob_065.h"
+#include "test_prob_066.h"
+#include "test_prob_067.h"
+#include "test_prob_068.h"
+#include "test_prob_069.h"
+#include "test_prob_070.h"
+#include "test_prob_071.h"
+#include "test_prob_072.h"
+#include "test_prob_073.h"
+#include "test_prob_074.h"
+#include "test_prob_075.h"

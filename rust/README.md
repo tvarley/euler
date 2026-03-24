@@ -2,7 +2,7 @@
 
 ## Description
 
-This directory contains Rust solutions to Project Euler problems 1-45, leveraging Rust's performance, memory safety, and zero-cost abstractions. The implementations showcase Rust's strengths in systems programming and mathematical computing.
+This directory contains Rust solutions to Project Euler problems 1-65, leveraging Rust's performance, memory safety, and zero-cost abstractions. The implementations showcase Rust's strengths in systems programming and mathematical computing.
 
 ## Features
 
@@ -78,7 +78,7 @@ rust/
 
 ## Problems Solved
 
-*Note: Problems 1-6 were hand-written implementations. Problems 7-50 were generated with AI assistance.*
+*Note: Problems 1-6 were hand-written implementations. Problems 7-75 were generated with AI assistance.*
 
 | #  | Problem | Answer |
 |----|---------|--------|
@@ -142,6 +142,22 @@ rust/
 | 058 | Spiral Primes | 26241 |
 | 059 | XOR Decryption | 107359 |
 | 060 | Prime Pair Sets | 26033 |
+| 061 | Cyclical Figurate Numbers | 28684 |
+| 062 | Cubic Permutations | 127035954683 |
+| 063 | Powerful Digit Counts | 49 |
+| 064 | Odd Period Square Roots | 1322 |
+| 065 | Convergents of e | 272 |
+
+| 066 | Diophantine equation | 661 |
+| 067 | Maximum path sum II | 7273 |
+| 068 | Magic 5-gon ring | 6531031914842725 |
+| 069 | Totient maximum | 510510 |
+| 070 | Totient permutation | 8319823 |
+| 071 | Ordered fractions | 428571 |
+| 072 | Counting fractions | 303963552391 |
+| 073 | Counting fractions in a range | 7295372 |
+| 074 | Digit factorial chains | 402 |
+| 075 | Singular integer right triangles | 161667 |
 
 ## Contributing
 

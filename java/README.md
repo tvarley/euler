@@ -114,6 +114,36 @@ java/
 | 048 | Self Powers | 9110846700 |
 | 049 | Prime Permutations | 296962999629 |
 | 050 | Consecutive Prime Sum | 997651 |
+| 051 | Prime Digit Replacements | 121313 |
+| 052 | Permuted Multiples | 142857 |
+| 053 | Combinatoric Selections | 4075 |
+| 054 | Poker Hands | 376 |
+| 055 | Lychrel Numbers | 249 |
+| 056 | Powerful Digit Sum | 972 |
+| 057 | Square Root Convergents | 153 |
+| 058 | Spiral Primes | 26241 |
+| 059 | XOR Decryption | 107359 |
+| 060 | Prime Pair Sets | 26033 |
+| 061 | Cyclical Figurate Numbers | 28684 |
+
+| 062 | Cubic Permutations | 127035954683 |
+
+| 063 | Powerful Digit Counts | 49 |
+
+| 064 | Odd Period Square Roots | 1322 |
+
+| 065 | Convergents of e | 272 |
+
+| 066 | Diophantine equation | 661 |
+| 067 | Maximum path sum II | 7273 |
+| 068 | Magic 5-gon ring | 6531031914842725 |
+| 069 | Totient maximum | 510510 |
+| 070 | Totient permutation | 8319823 |
+| 071 | Ordered fractions | 428570 |
+| 072 | Counting fractions | 303963552391 |
+| 073 | Counting fractions in a range | 7295372 |
+| 074 | Digit factorial chains | 402 |
+| 075 | Singular integer right triangles | 161667 |
 
 ## Contributing
 
