@@ -144,6 +144,31 @@ java/
 | 073 | Counting fractions in a range | 7295372 |
 | 074 | Digit factorial chains | 402 |
 | 075 | Singular integer right triangles | 161667 |
+| 076 | Counting Summations | 190569291 |
+| 077 | Prime Summations | 71 |
+| 078 | Coin Partitions | 55374 |
+| 079 | Passcode Derivation | 73162890 |
+| 080 | Square Root Digital Expansion | 40886 |
+| 081 | Path Sum: Two Ways | 427337 |
+| 082 | Path Sum: Three Ways | 260324 |
+| 083 | Path Sum: Four Ways | 425185 |
+| 084 | Monopoly Odds | 101524 |
+| 085 | Counting Rectangles | 2772 |
+| 086 | Cuboid Route | 1818 |
+| 087 | Prime Power Triples | 1097343 |
+| 088 | Product-sum Numbers | 7587457 |
+| 089 | Roman Numerals | 743 |
+| 090 | Cube Digit Pairs | 1217 |
+| 091 | Right Triangles with Integer Coordinates | 14234 |
+| 092 | Square Digit Chains | 8581146 |
+| 093 | Arithmetic Expressions | 1258 |
+| 094 | Almost Equilateral Triangles | 518408346 |
+| 095 | Amicable Chains | 14316 |
+| 096 | Su Doku | 24702 |
+| 097 | Large Non-Mersenne Prime | 8739992577 |
+| 098 | Anagramic Squares | 18769 |
+| 099 | Largest Exponential | 709 |
+| 100 | Arranged Probability | 756872327473 |
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 # Project Euler Python Solutions [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
-This directory contains Python solutions for Project Euler problems 1 through 75.
+This directory contains Python solutions for Project Euler problems 1 through 100.
 
 ## Structure
 
@@ -143,6 +143,31 @@ python src/euler001.py
 | 073 | Counting fractions in a range | 7295372 |
 | 074 | Digit factorial chains | 402 |
 | 075 | Singular integer right triangles | 161667 |
+| 076 | Counting Summations | 190569291 |
+| 077 | Prime Summations | 71 |
+| 078 | Coin Partitions | 55374 |
+| 079 | Passcode Derivation | 73162890 |
+| 080 | Square Root Digital Expansion | 40886 |
+| 081 | Path Sum: Two Ways | 427337 |
+| 082 | Path Sum: Three Ways | 260324 |
+| 083 | Path Sum: Four Ways | 425185 |
+| 084 | Monopoly Odds | 101524 |
+| 085 | Counting Rectangles | 2772 |
+| 086 | Cuboid route | 1818 |
+| 087 | Prime power triples | 1097343 |
+| 088 | Product-sum numbers | 7587457 |
+| 089 | Roman numerals | 743 |
+| 090 | Cube digit pairs | 1217 |
+| 091 | Right triangles with integer coordinates | 14234 |
+| 092 | Square digit chains | 8581146 |
+| 093 | Arithmetic expressions | 1258 |
+| 094 | Almost equilateral triangles | 518408346 |
+| 095 | Amicable chains | 14316 |
+| 096 | Su Doku | 24702 |
+| 097 | Large non-Mersenne prime | 8739992577 |
+| 098 | Anagramic squares | 18769 |
+| 099 | Largest exponential | 709 |
+| 100 | Arranged probability | 756872327473 |
 
 ## Notes
 

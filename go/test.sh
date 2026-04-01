@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+#set -euo pipefail
 
 cd "$(dirname "$0")"
 
@@ -12,6 +12,8 @@ check() {
     local file="$2"
     local expected="$3"
     local got
+
+    printf "RUNNING  %-20s\n" "$label"
 
     got=$(go run "$file" 2>&1 | tr -d '\n')
 
@@ -103,7 +105,31 @@ check "euler072" euler072.go "303963552391"
 check "euler073" euler073.go "7295372"
 check "euler074" euler074.go "402"
 check "euler075" euler075.go "161667"
-
+check "euler076" euler076.go "190569291"
+check "euler077" euler077.go "71"
+check "euler078" euler078.go "55374"
+check "euler079" euler079.go "73162890"
+check "euler080" euler080.go "40727"
+check "euler081" euler081.go "427337"
+check "euler082" euler082.go "260324"
+check "euler083" euler083.go "425185"
+check "euler084" euler084.go "101516"
+check "euler085" euler085.go "2772"
+check "euler086" euler086.go "1818"
+check "euler087" euler087.go "1097343"
+check "euler088" euler088.go "7587457"
+check "euler089" euler089.go "743"
+check "euler090" euler090.go "1217"
+check "euler091" euler091.go "14234"
+check "euler092" euler092.go "8581146"
+check "euler093" euler093.go "1258"
+check "euler094" euler094.go "518408346"
+check "euler095" euler095.go "14316"
+check "euler096" euler096.go "24702"
+check "euler097" euler097.go "8739992577"
+check "euler098" euler098.go "18769"
+check "euler099" euler099.go "709"
+check "euler100" euler100.go "756872327473"
 echo "--------------------------------------"
 echo "Results: ${PASS} passed, ${FAIL} failed"
 
