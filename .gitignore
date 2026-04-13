@@ -42,4 +42,5 @@ cpp/src/catch_amalgamated.hpp
 
 # JavaScript
 javascript/package-lock.json
-generate
+generate/
+**/trace.log

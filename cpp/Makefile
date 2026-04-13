@@ -81,12 +81,37 @@ BINARIES=$(BIN)/euler001 \
 			$(BIN)/euler073 \
 			$(BIN)/euler074 \
 			$(BIN)/euler075 \
+			$(BIN)/euler076 \
+			$(BIN)/euler077 \
+			$(BIN)/euler078 \
+			$(BIN)/euler079 \
+			$(BIN)/euler080 \
+			$(BIN)/euler081 \
+			$(BIN)/euler082 \
+			$(BIN)/euler083 \
+			$(BIN)/euler084 \
+			$(BIN)/euler085 \
+			$(BIN)/euler086 \
+			$(BIN)/euler087 \
+			$(BIN)/euler088 \
+			$(BIN)/euler089 \
+			$(BIN)/euler090 \
+			$(BIN)/euler091 \
+			$(BIN)/euler092 \
+			$(BIN)/euler093 \
+			$(BIN)/euler094 \
+			$(BIN)/euler095 \
+			$(BIN)/euler096 \
+			$(BIN)/euler097 \
+			$(BIN)/euler098 \
+			$(BIN)/euler099 \
+			$(BIN)/euler100 \
 			$(BIN)/unittest
 
 all: $(BINARIES)
 
 clean:
-	rm -f $(BINARIES)
+	rm -f $(BINARIES) $(SRC)/unittest.o
 
 $(SRC)/sieve_eratos.o: $(SRC)/sieve_eratos.cpp $(SRC)/sieve_eratos.h
 
@@ -100,12 +125,15 @@ $(BIN)/euler007: $(SRC)/euler007.o $(SRC)/sieve_eratos.o
 $(BIN)/euler010: $(SRC)/euler010.o $(SRC)/sieve_eratos.o
 	$(CXX) $(CXXFLAGS) $< -o $@ $(LLIB)
 
-TESTINC := $(wildcard $(SRC)/test_*.h)
-SOLUSRC := $(wildcard $(SRC)/euler*.cpp)
-$(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SRC)/sieve_eratos.h $(SRC)/simple_timer.h
+$(SRC)/catch_amalgamated.o: $(SRC)/catch_amalgamated.cpp $(SRC)/catch_amalgamated.hpp
 
 $(BIN)/unittest: $(SRC)/unittest.o $(SRC)/sieve_eratos.o $(SRC)/catch_amalgamated.o
-		$(CXX) $(CXXFLAGS) $^ -o $@ $(LIB)
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LIB)
+
+TESTINC := $(wildcard $(SRC)/test_*.h)
+SOLUSRC := $(wildcard $(SRC)/euler*.cpp)
+$(SRC)/unittest.o: $(SRC)/unittest.cpp $(TESTINC) $(SOLUSRC) $(SRC)/sieve_eratos.h $(SRC)/simple_timer.h
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 $(BIN)/%:  $(SRC)/%.o $(SRC)/simple_timer.h
 	$(CXX) $(CXXFLAGS) $< -o $@

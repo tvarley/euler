@@ -1,5 +1,7 @@
 # Project Euler — Ruby Solutions [![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)](https://www.ruby-lang.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 
+**Note:** Ruby implementations are deprecated and no new solutions will be generated for this language.
+
 ## Description
 
 This directory contains Ruby solutions to Project Euler problems 1-30, showcasing Ruby's elegant syntax and powerful standard library. The implementations demonstrate Ruby idioms and efficient algorithms.

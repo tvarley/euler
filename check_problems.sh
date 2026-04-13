@@ -1,12 +1,13 @@
 #!/bin/bash
 
 # check_problems.sh - Check problem completeness across all languages
+# Ruby is deprecated
 
 echo "=== Project Euler Problem Completeness Check ==="
 echo
 
 languages=("cpp" "go" "java" "javascript" "python" "rust")
-total_problems=75
+total_problems=100
 
 for lang in "${languages[@]}"; do
     echo "Checking $lang..."
@@ -16,7 +17,7 @@ for lang in "${languages[@]}"; do
             count=$(ls -1 "$lang/src/euler"*.cpp 2>/dev/null | wc -l)
             ;;
         go)
-            count=$(ls -1 "$lang/euler"*.go 2>/dev/null | wc -l)
+            count=$(ls -1 "$lang/euler"*.go 2>/dev/null | grep -v "_test.go" | wc -l)
             ;;
         java)
             count=$(ls -1 "$lang/src/main/java/org/tvarley/euler/solutions/Solution"*.java 2>/dev/null | wc -l)
