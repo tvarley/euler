@@ -20,6 +20,8 @@ Project Euler is a series of challenging mathematical/computer programming probl
 
 This repository provides comprehensive solutions to the first 100 Project Euler problems in six different programming languages: C++, Go, Java, JavaScript, Python, and Rust. Each language implementation demonstrates optimal algorithms, performance considerations, and language-specific best practices. The solutions serve as educational examples for learning both mathematical problem-solving and programming techniques across paradigms.
 
+**These solutions are automatically generated using AI agents**, guided by engineering expertise to ensure mathematically rigorous and optimal implementations. The AI employs Chain-of-Thought prompting strategies to derive mathematical proofs before coding, enforces Big-O complexity constraints, and translates logic idiomatically across programming languages while maintaining automated verification through test-driven generation.
+
 **Note:** Everything in this repository before the ai_takeover tag was hand-written. This repository is now 100% generated and maintained using AI assistance.
 
 ### Project Goals
@@ -149,6 +151,8 @@ Please ensure all tests pass and the solution is efficient.
 [Project Euler](https://projecteuler.net/)
 
 [Current Repository](https://github.com/tvarley/euler)
+
+[Website](https://tvarley.github.io/projects/euler-solutions/)
 
 ## License
 
